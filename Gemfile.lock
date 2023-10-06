@@ -81,7 +81,7 @@ GEM
     crass (1.0.6)
     date (3.3.3)
     erubi (1.12.0)
-    ffi (1.16.2-x64-mingw32)
+    ffi (1.16.3-x64-mingw32)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -184,9 +184,6 @@ GEM
     thor (1.2.2)
     tilt (2.3.0)
     timeout (0.4.0)
-    turbolinks (5.2.1)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2023.3)
@@ -228,7 +225,6 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   sqlite3 (~> 1.4)
-  turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
