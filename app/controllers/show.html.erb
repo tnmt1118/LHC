@@ -1,4 +1,4 @@
 <h1>利用者情報</h1>
 
-<p>メールアドレス：<%= user.emal %></p>
-<p><%= link_to '登録解除', unsubscribe_path(@user), method: delete, date: { confirm: '本当に登録解除しますか？' }%></p>
+<p>メールアドレス：<%= user.email %></p>
+<p><%= link_to '登録解除', unsubscribe_path(@user), method: :delete, data: { confirm: '本当に登録解除しますか？' }%></p>
