@@ -14,9 +14,10 @@
  *= require_self
  */
 
- h1{
+.title {
     color: darkcyan;
     font-size: 50px;
+    font-weight: bold;
     text-align: center;
 
 }
