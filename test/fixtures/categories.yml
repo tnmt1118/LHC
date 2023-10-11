@@ -1,14 +1,14 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  api-category: MyString
+  api_category: MyString
   category1: MyString
   category2: MyString
   category3: MyString
   name: MyString
 
 two:
-  api-category: MyString
+  api_category: MyString
   category1: MyString
   category2: MyString
   category3: MyString

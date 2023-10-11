@@ -1,10 +1,10 @@
-<%= form_with(model: categoly) do |form| %>
-  <% if categoly.errors.any? %>
+<%= form_with(model: category) do |form| %>
+  <% if category.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(categoly.errors.count, "error") %> prohibited this categoly from being saved:</h2>
+      <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
 
       <ul>
-        <% categoly.errors.each do |error| %>
+        <% category.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>
@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :api-category %>
-    <%= form.text_field :api-category %>
+    <%= form.label :api_category %>
+    <%= form.text_field :api_category %>
   </div>
 
   <div class="field">
