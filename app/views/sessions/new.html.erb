@@ -1,0 +1,13 @@
+<h1>ログイン</h1>
+
+<%= form_with model: @session, local: true do |form| %>
+    <%= flash[:denger] %>
+
+    <%= form.label :email, 'メールアドレス' %>
+    <%= form.email_field :email %>
+
+    <%= form.label :password, 'パスワード' %>
+    <%= form.password_field :password %>
+
+    <%= form.submit 'ログイン' %>
+<% end %>
