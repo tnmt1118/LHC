@@ -1,2 +1,0 @@
-class Categoly < ApplicationRecord
-end

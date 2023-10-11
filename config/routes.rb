@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :categolies
+  resources :categories
   resources :favorites
   resources :shoppings
   resources :blocks

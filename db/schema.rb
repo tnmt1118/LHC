@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_10_022854) do
+ActiveRecord::Schema.define(version: 2023_10_11_024430) do
 
   create_table "blocks", force: :cascade do |t|
     t.string "block"
@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2023_10_10_022854) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "categolies", force: :cascade do |t|
+  create_table "categories", force: :cascade do |t|
     t.string "api_category"
     t.string "category1"
     t.string "category2"
