@@ -1,10 +1,22 @@
 <h1 class="title">Let's Help Cook</h1>
 
-<div style="text-align:center">
-  <div class="menu_box">
-    <button>レシピ</button>
+<div class="row">
+  <div class="col-12 col-md-6">
+    <%= link_to "レシピ検索",searches_search_path, {class: "btn btn-lg btn-primary big btn-color" } %>
   </div>
-  <div class="menu_box">
-    <button>お気に入り</button>
+
+
+  <div class="col-12 col-md-6">
+    <%= link_to "お気に入り",favorites_path, {class: "btn btn-lg btn-primary big btn-color" } %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-6">
+    <%= link_to "ブロック",blocks_path, {class: "btn btn-lg btn-primary big btn-color" } %>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <%= link_to "買い物",shoppings_path, {class: "btn btn-lg btn-primary big btn-color" } %>
   </div>
 </div>
