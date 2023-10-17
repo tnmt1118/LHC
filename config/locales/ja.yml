@@ -1,0 +1,35 @@
+ja:
+  activerecord:
+    models:
+      user: 利用者
+      category: レシピカテゴリ
+      block: ブロック
+      shopping: 買い物リスト
+      favorite: お気に入り登録
+
+
+    attributes:
+      user:
+        name: 名前
+        password: パスワード
+        email: メール
+
+      category:
+        api_category: レシピ取得用カテゴリid
+        category1: 大カテゴリ
+        category2: 中カテゴリ
+        category3: 小カテゴリ
+        name: 名前
+
+      block:
+        user_id: 利用者id
+        block: ブロック
+
+      shopping:
+        buy: 購入品
+        user_id: 利用者id
+
+      favorite:
+        user_id: 利用者id
+        favorite: お気に入り
+
