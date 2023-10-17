@@ -8,10 +8,10 @@ ja:
       favorite: お気に入り登録
 
 
-    attribute:
+    attributes:
       user:
         name: 名前
-        password_digest: パスワード
+        password: パスワード
         email: メール
 
       category:
@@ -23,7 +23,7 @@ ja:
 
       block:
         user_id: 利用者id
-        block:　ブロック
+        block: ブロック
 
       shopping:
         buy: 購入品
