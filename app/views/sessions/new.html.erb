@@ -1,13 +1,23 @@
 <h1>ログイン</h1>
 
 <%= form_with model: @session, local: true do |form| %>
-    <%= flash[:denger] %>
+    <%= flash[:danger] %>
 
-    <%= form.label :email, 'メールアドレス' %>
-    <%= form.email_field :email %>
+    <div>
+        <%= form.label :email, 'メールアドレス' %>
+        <br>
+        <%= form.email_field :email, {class: "form-control"} %>
+    </div>
 
-    <%= form.label :password, 'パスワード' %>
-    <%= form.password_field :password %>
+    <div>
+        <%= form.label :password, 'パスワード' %>
+        <br>
+        <%= form.password_field :password, { class: "form-control"} %>
+    </div>
 
-    <%= form.submit 'ログイン' %>
+    <div class="d-grid gap-2">
+        <%= form.submit 'ログイン', {class: "btn btn-primary"} %>
+    </div>
 <% end %>
+
+<%= link_to "初めての方はこちらから！！",signup_path %>
