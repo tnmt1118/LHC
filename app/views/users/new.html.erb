@@ -9,18 +9,32 @@
             <% end %>
         </ul>
     <% end %>
+    <div>
+        <%= form.label :name, '名前' %>
+        <br>
+        <%= form.text_field :name,{class: "form-control"} %>
+    </div>
 
-    <%= form.label :name, '名前' %>
-    <%= form.text_field :name %>
+    <div>
+        <%= form.label :email, 'メールアドレス' %>
+        <br>
+        <%= form.email_field :email,{class: "form-control"} %>
+    </div>
 
-    <%= form.label :email, 'メールアドレス' %>
-    <%= form.email_field :email %>
+    <div>
+        <%= form.label :password, 'パスワード' %>
+        <br>
+        <%= form.password_field :password,{class: "form-control"} %>
+    </div>
 
-    <%= form.label :password, 'パスワード' %>
-    <%= form.password_field :password %>
+    <div>
+        <%= form.label :password_confirmation, 'パスワード(確認)' %>
+        <br>
+        <%= form.password_field :password_confirmation,{class: "form-control"} %>
+    </div>
 
-    <%= form.label :password_confirmation, 'パスワード(確認)' %>
-    <%= form.password_field :password_confirmation %>
-
-    <%= form.submit '登録' %>
+    <div>
+        <br>
+        <%= form.submit '登録' %>
+    </div>
 <% end %>
