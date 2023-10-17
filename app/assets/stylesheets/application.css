@@ -24,4 +24,9 @@
  .row{
     text-align: center;
     padding-top: 15px;
+    padding-left: 15%;
+}
+
+.card{
+    width: 300px;
 }
