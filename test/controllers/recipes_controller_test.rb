@@ -1,8 +1,8 @@
 require "test_helper"
 
-class SearchesControllerTest < ActionDispatch::IntegrationTest
+class RecipesControllerTest < ActionDispatch::IntegrationTest
   test "should get search" do
-    get searches_search_url
+    get reccipes_search_url
     assert_response :success
   end
 end

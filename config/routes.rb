@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'displays/display'
-  get 'searches/search'
+  get 'recipes/search'
   resources :categories
   resources :favorites
   resources :shoppings
