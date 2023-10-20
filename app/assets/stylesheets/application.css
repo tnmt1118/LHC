@@ -15,13 +15,19 @@
  */
 
 .title {
-    color: darkcyan;
+    color: rgb(180, 81, 68);
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-
+    font-family: 'Caveat', cursive;
 }
+
  .row{
     text-align: center;
     padding-top: 15px;
+    padding-left: 15%;
+}
+
+.card{
+    width: 300px;
 }

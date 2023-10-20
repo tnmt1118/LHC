@@ -10,4 +10,9 @@ class RecipesControllerTest < ActionDispatch::IntegrationTest
     get recipes_details_url
     assert_response :success
   end
+
+  test "should get search" do
+    get reccipes_search_url
+    assert_response :success
+  end
 end
