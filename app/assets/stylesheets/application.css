@@ -22,19 +22,6 @@
     font-family: 'Caveat', cursive;
 }
 
- .row{
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
- }
-
-.card{
-    width: 300px;
-}
-
-.col-md-6{
-    padding-top: 30px;
-}
 
 .blocktitle h1{
     color: rgb(180, 81, 68);
