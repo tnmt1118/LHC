@@ -15,7 +15,7 @@
  */
 
 .title {
-    color: rgb(180, 81, 68);
+    color: rgb(165, 39, 39);
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -41,6 +41,29 @@
     padding-top: 30px;
 }
 
+<<<<<<< HEAD
 a{
     width: 0px;
+=======
+.blocktitle h1{
+    color: rgb(180, 81, 68);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.blockitiran{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.blockitiran1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+>>>>>>> 56aa9b8f3c5e437f27568186ecf3533c7f2a4e48
 }

@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   color: #333;
   margin: 33px; }
 
@@ -9,7 +9,7 @@ body, p, ol, ul, td {
   line-height: 18px; }
 
 pre {
-  background-color: #eee;
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   font-size: 11px; }
 
@@ -17,11 +17,11 @@ a {
   color: #000; }
 
 a:visited {
-  color: #fff; }
+  color: rgb(165, 39, 39); }
 
 a:hover {
-  color: #fff;
-  background-color: #000; }
+  color: rgb(255, 255, 255);
+  background-color: rgb(157, 161, 173); }
 
 th {
   padding-bottom: 5px; }
@@ -55,7 +55,7 @@ div.actions {
   font-size: 12px;
   margin: -7px -7px 0;
   background-color: #c00;
-  color: #fff; }
+  color: rgb(165, 39, 39); }
 
 #error_explanation ul li {
   font-size: 12px;
