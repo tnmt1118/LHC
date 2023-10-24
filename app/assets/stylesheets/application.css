@@ -35,3 +35,25 @@
 .col-md-6{
     padding-top: 30px;
 }
+
+.blocktitle h1{
+    color: rgb(180, 81, 68);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.blockitiran{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.blockitiran1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
