@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'recipes/display'
+  get 'recipes/details'
   get 'displays/display'
   get 'recipes/search'
   resources :categories

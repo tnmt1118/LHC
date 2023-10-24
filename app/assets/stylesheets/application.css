@@ -24,10 +24,14 @@
 
  .row{
     text-align: center;
-    padding-top: 15px;
     padding-left: 15%;
-}
+    padding-right: 15%;
+ }
 
 .card{
     width: 300px;
+}
+
+.col-md-6{
+    padding-top: 30px;
 }
