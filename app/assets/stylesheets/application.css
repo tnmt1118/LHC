@@ -22,29 +22,7 @@
     font-family: 'Caveat', cursive;
 }
 
-.col-12{
-    padding-left: 1%;
-}
 
- .row{
-    text-align: center;
-    padding-left: 11%;
- }
-
-.card{
-    width: 300px;
-}
-
-
-
-.col-md-6{
-    padding-top: 30px;
-}
-
-<<<<<<< HEAD
-a{
-    width: 0px;
-=======
 .blocktitle h1{
     color: rgb(180, 81, 68);
     font-size: 50px;
@@ -65,5 +43,4 @@ a{
     font-weight: bold;
     text-align: center;
     font-family: 'Caveat', cursive;
->>>>>>> 56aa9b8f3c5e437f27568186ecf3533c7f2a4e48
 }
