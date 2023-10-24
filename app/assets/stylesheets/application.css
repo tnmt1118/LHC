@@ -47,13 +47,21 @@
 .blockitiran{
     font-size: 30px;
     font-weight: bold;
-    text-align: center;
     font-family: 'Caveat', cursive;
 }
 
 .blockitiran1{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    text-align: center;
     font-family: 'Caveat', cursive;
+}
+
+#block_block{
+    margin-top:20px;
+    width: 300px;
+    height:48px;
+}
+
+label{
+    font-size: 30px;
 }
