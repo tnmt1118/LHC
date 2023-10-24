@@ -22,19 +22,6 @@
     font-family: 'Caveat', cursive;
 }
 
- .row{
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
- }
-
-.card{
-    width: 300px;
-}
-
-.col-md-6{
-    padding-top: 30px;
-}
 
 .blocktitle h1{
     color: rgb(180, 81, 68);
@@ -47,17 +34,16 @@
 .blockitiran{
     font-size: 30px;
     font-weight: bold;
-    text-align: center;
     font-family: 'Caveat', cursive;
 }
 
 .blockitiran1{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
-    text-align: center;
     font-family: 'Caveat', cursive;
 }
 
+<<<<<<< HEAD
 .homeicon img{
 
 }
@@ -70,3 +56,14 @@
     position: absolute;
     right: 0px;
 }
+=======
+#block_block{
+    margin-top:20px;
+    width: 300px;
+    height:48px;
+}
+
+label{
+    font-size: 30px;
+}
+>>>>>>> 0f07f31641dbb530613b3840284f583ca0b64e53

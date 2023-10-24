@@ -15,11 +15,15 @@
   <tbody>
     <% @blocks.each do |block| %>
       <tr>
-        <td class="blockitiran1"><%= block.block %></td>
+        <td class="blockitiran1"><li><%= block.block %></li></td>
         <td><%= block.user_id %></td>
         <td class="blockitiran1"><%= link_to '詳細', block %></td>
         <td class="blockitiran1"><%= link_to '編集', edit_block_path(block) %></td>
+<<<<<<< HEAD
         <td class="blockitiran1"><%= link_to '削除', block, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
+=======
+        <td class="blockitiran1"><%= link_to '削除', block, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> 0f07f31641dbb530613b3840284f583ca0b64e53
       </tr>
     <% end %>
   </tbody>
