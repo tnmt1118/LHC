@@ -35,7 +35,6 @@
     <% @shoppings.each do |shopping| %>
       <tr>
         <td class="blockitiran1"><%= shopping.buy %></td>
-        <td><%= shopping.user_id %></td>
         <td class="blockitiran1"><%= link_to '詳細', shopping %></td>
         <td class="blockitiran1"><%= link_to '編集', edit_shopping_path(shopping) %></td>
         <td class="blockitiran1"><%= link_to '削除', shopping, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>

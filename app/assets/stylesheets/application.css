@@ -63,6 +63,13 @@ h3{
     font-family: 'Caveat', cursive;
 }
 
+.blockitiran2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    color:black;
+}
+
 .homeicon img{
 
 }
@@ -84,3 +91,5 @@ h3{
 label{
     font-size: 30px;
 }
+
+
