@@ -33,6 +33,15 @@
     
 }
 
+.ss{
+    text-decoration: none;
+}
+
+a:hover.ss{
+    text-decoration: underline;
+    color: rgb(165, 39, 39);
+}
+
 h3{
     font-size: 50px;
     color: rgb(165, 39, 39);
@@ -51,7 +60,25 @@ h3{
     font-weight: bold;
     text-align: center;
     font-family: 'Caveat', cursive;
+    float: left;
 }
+
+
+
+.blocktitle h1 a {
+		display: block;
+		width: 64px;
+		height: 69px;
+		font-size: 0;
+		background: url(images/home.png) right top/64px auto no-repeat;
+	}
+
+
+
+
+
+
+
 
 .th th {
     font-size: 150%;
@@ -59,7 +86,7 @@ h3{
 
 
 .blockitiran{
-    font-size: 30px;
+    font-size: 27px;
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
@@ -71,7 +98,7 @@ h3{
 }
 
 .blockitiran2{
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Caveat', cursive;
     color:black;

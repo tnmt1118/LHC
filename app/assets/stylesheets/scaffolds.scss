@@ -14,15 +14,21 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000; }
+  color: #000;
+  text-decoration: none;
+  color: rgb(165, 39, 39); 
+}
+  
+
 
 a:visited {
   color: rgb(165, 39, 39); 
+  text-decoration: none;
 }
 
-a:hover {
+/*a:hover {
   color: rgb(255, 255, 255);
-  background-color: rgb(157, 161, 173); }
+  background-color: rgb(157, 161, 173); }*/
 
 
 th {
