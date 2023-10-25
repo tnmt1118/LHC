@@ -47,11 +47,16 @@ h3{
 /*ブロック画面*/
 .blocktitle h1{
     color: rgb(180, 81, 68);
-    font-size: 50px;
+    font-size: 250%;
     font-weight: bold;
     text-align: center;
     font-family: 'Caveat', cursive;
 }
+
+.th th {
+    font-size: 150%;
+}
+
 
 .blockitiran{
     font-size: 30px;
@@ -60,11 +65,30 @@ h3{
 }
 
 .blockitiran1{
-    font-size: 25px;
+    font-size: 120%;
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
 
+.blockitiran2{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Caveat', cursive;
+    color:black;
+}
+
+.homeicon img{
+
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    right: 0px;
+}
 #block_block{
     margin-top:20px;
     width: 300px;
@@ -74,3 +98,5 @@ h3{
 label{
     font-size: 30px;
 }
+
+

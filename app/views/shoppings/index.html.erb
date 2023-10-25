@@ -1,24 +1,43 @@
 <p id="notice"><%= notice %></p>
+<div class="blocktitle">
+<h1>買い物リスト</h1>
+</div>
 
-<h1>Shoppings</h1>
+<%#19行目までホームボタン%>
+<style>
+.example{
+    display: inline-block;
+}
+.example img{
+    display: block;
+}
+</style>
+<div class="relative">
+  <a class="homeicon" href="http://localhost:3000/" class="example">
+    <img class="absolute" width="50" src="images/home.png" alt="home">
+  </a>
+</div>
 
+<div class="th">
 <table>
   <thead>
     <tr>
-      <th>Buy</th>
-      <th>User</th>
+      <th class="blockitiran">食材一覧</th>
+
+      <%#><th>Buy</th>
+      <th>User</th></%>
       <th colspan="3"></th>
     </tr>
   </thead>
+</th>
 
   <tbody>
     <% @shoppings.each do |shopping| %>
       <tr>
-        <td><%= shopping.buy %></td>
-        <td><%= shopping.user_id %></td>
-        <td><%= link_to 'Show', shopping %></td>
-        <td><%= link_to 'Edit', edit_shopping_path(shopping) %></td>
-        <td><%= link_to 'Destroy', shopping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="blockitiran1"><%= shopping.buy %></td>
+        <td class="blockitiran1"><%= link_to '詳細', shopping %></td>
+        <td class="blockitiran1"><%= link_to '編集', edit_shopping_path(shopping) %></td>
+        <td class="blockitiran1"><%= link_to '削除', shopping, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +45,4 @@
 
 <br>
 
-<%= link_to 'New Shopping', new_shopping_path %>
+<%= link_to '食材追加', new_shopping_path %>

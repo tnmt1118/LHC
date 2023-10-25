@@ -26,8 +26,9 @@ ja:
         block: ブロック
 
       shopping:
-        buy: 購入品
         user_id: 利用者id
+        buy: 購入品
+        memo: メモ
 
       favorite:
         user_id: 利用者id
