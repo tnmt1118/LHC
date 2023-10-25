@@ -63,6 +63,7 @@ h3{
     float: left;
 }
 
+<<<<<<< HEAD
 
 
 .blocktitle h1 a {
@@ -87,18 +88,28 @@ h3{
 
 .blockitiran{
     font-size: 27px;
+=======
+
+.itiran{
+    font-size: 30px;
+>>>>>>> 0e5187c16c5e459f66f75d62e75eab825e1471fd
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
 
-.blockitiran1{
+.itiran1{
     font-size: 120%;
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
 
+<<<<<<< HEAD
 .blockitiran2{
     font-size: 15px;
+=======
+.itiran2{
+    font-size: 18px;
+>>>>>>> 0e5187c16c5e459f66f75d62e75eab825e1471fd
     font-weight: bold;
     font-family: 'Caveat', cursive;
     color:black;
