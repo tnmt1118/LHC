@@ -15,6 +15,7 @@ class ShoppingsTest < ApplicationSystemTestCase
     click_on "New Shopping"
 
     fill_in "Buy", with: @shopping.buy
+    fill_in "Memo", with: @shopping.memo
     fill_in "User", with: @shopping.user_id
     click_on "Create Shopping"
 
@@ -27,6 +28,7 @@ class ShoppingsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Buy", with: @shopping.buy
+    fill_in "Memo", with: @shopping.memo
     fill_in "User", with: @shopping.user_id
     click_on "Update Shopping"
 
