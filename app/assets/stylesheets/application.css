@@ -40,11 +40,16 @@ h3{
 
 .blocktitle h1{
     color: rgb(180, 81, 68);
-    font-size: 50px;
+    font-size: 250%;
     font-weight: bold;
     text-align: center;
     font-family: 'Caveat', cursive;
 }
+
+.th th {
+    font-size: 150%;
+}
+
 
 .blockitiran{
     font-size: 30px;
@@ -53,7 +58,7 @@ h3{
 }
 
 .blockitiran1{
-    font-size: 25px;
+    font-size: 120%;
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
