@@ -91,8 +91,12 @@ h3{
 =======
 
 .itiran{
+<<<<<<< HEAD
     font-size: 30px;
 >>>>>>> 0e5187c16c5e459f66f75d62e75eab825e1471fd
+=======
+    font-size: 25px;
+>>>>>>> d7c8cd761038c20d691902835a4944e392e1b638
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
@@ -108,8 +112,12 @@ h3{
     font-size: 15px;
 =======
 .itiran2{
+<<<<<<< HEAD
     font-size: 18px;
 >>>>>>> 0e5187c16c5e459f66f75d62e75eab825e1471fd
+=======
+    font-size: 15px;
+>>>>>>> d7c8cd761038c20d691902835a4944e392e1b638
     font-weight: bold;
     font-family: 'Caveat', cursive;
     color:black;
@@ -137,4 +145,11 @@ label{
     font-size: 30px;
 }
 
+.sen{
+    border:solid 1px black;
+}
+
+th, table td {
+    border: solid 1px black;
+}
 

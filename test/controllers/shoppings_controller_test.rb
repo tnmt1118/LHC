@@ -17,7 +17,7 @@ class ShoppingsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create shopping" do
     assert_difference('Shopping.count') do
-      post shoppings_url, params: { shopping: { buy: @shopping.buy, user_id: @shopping.user_id } }
+      post shoppings_url, params: { shopping: { buy: @shopping.buy, memo: @shopping.memo, user_id: @shopping.user_id } }
     end
 
     assert_redirected_to shopping_url(Shopping.last)
@@ -34,7 +34,7 @@ class ShoppingsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update shopping" do
-    patch shopping_url(@shopping), params: { shopping: { buy: @shopping.buy, user_id: @shopping.user_id } }
+    patch shopping_url(@shopping), params: { shopping: { buy: @shopping.buy, memo: @shopping.memo, user_id: @shopping.user_id } }
     assert_redirected_to shopping_url(@shopping)
   end
 

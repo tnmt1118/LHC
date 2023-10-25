@@ -65,6 +65,6 @@ class ShoppingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def shopping_params
-      params.require(:shopping).permit(:buy, :user_id)
+      params.require(:shopping).permit(:buy, :memo)
     end
 end
