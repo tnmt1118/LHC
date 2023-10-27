@@ -6,7 +6,7 @@ body {
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px; }
+  line-height: 60px }
 
 pre {
   background-color: rgb(255, 255, 255);
@@ -14,15 +14,14 @@ pre {
   font-size: 11px; }
 
 a {
-  color: #000;
+  color: rgb(165, 39, 39);
   text-decoration: none;
   color: rgb(165, 39, 39); 
 }
-  
-
 
 a:visited {
-  color: rgb(165, 39, 39); 
+  color:rgb(165, 39, 39);
+  background-color: grey;
   text-decoration: none;
 }
 
@@ -45,9 +44,9 @@ div.actions {
   color: green; }
 
 .field_with_errors {
-  padding: 2px;
-  background-color: red;
+  padding: 0px;
   display: table; }
+
 
 #error_explanation {
   width: 450px;

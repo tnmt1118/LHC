@@ -27,7 +27,7 @@ ja:
 
       shopping:
         user_id: 利用者id
-        buy: 購入品
+        buy: 食材
         memo: メモ
 
       favorite:
