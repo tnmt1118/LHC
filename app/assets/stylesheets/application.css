@@ -63,22 +63,13 @@ h3{
     float: left;
 }
 
-
-.blocktitle h1 {
-	display: block;
-	width: 64px;
-	height: 69px;
-	font-size: 0;
-	background: url(images/home.png) right top/64px auto no-repeat;
-}
-
 .th th {
     font-size: 150%;
 }
 
 
 .blockitiran{
-    font-size: 27px;
+    font-size: 30%;
 }
 
 .itiran{
@@ -111,7 +102,7 @@ h3{
 
 .absolute{
     position: absolute;
-    right: 0px;
+    right: -100px;
 }
 #block_block{
     margin-top:20px;
@@ -128,6 +119,7 @@ label{
 }
 
 th, table td {
-    border: solid 1px black;
+    border: solid 2px black;
+    padding: 10px;
 }
 

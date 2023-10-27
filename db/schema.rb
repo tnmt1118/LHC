@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_11_024430) do
+ActiveRecord::Schema.define(version: 2023_10_27_050002) do
 
   create_table "blocks", force: :cascade do |t|
     t.string "block"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2023_10_11_024430) do
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "memo"
   end
 
   create_table "users", force: :cascade do |t|

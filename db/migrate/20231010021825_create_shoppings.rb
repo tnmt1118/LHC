@@ -1,7 +1,5 @@
 class CreateShoppings < ActiveRecord::Migration[6.1]
   def change
-
-    add_column :shoppings, :memo, :text
     
     create_table :shoppings do |t|
       t.string :buy
