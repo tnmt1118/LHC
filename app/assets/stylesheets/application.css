@@ -60,12 +60,7 @@ h3{
     font-size: 250%;
     font-weight: bold;
     text-align: center;
-<<<<<<< HEAD
-    font-family: 'Caveat', cursive;
-    float: left;
-=======
     font-family: 'Courier New', Courier, monospace;
->>>>>>> 23aedbebf056f5854ac136fb9dc8f10cb71bab3f
 }
 
 .th th {
@@ -73,13 +68,6 @@ h3{
 }
 
 
-<<<<<<< HEAD
-.blockitiran{
-    font-size: 30%;
-}
-
-=======
->>>>>>> 23aedbebf056f5854ac136fb9dc8f10cb71bab3f
 .itiran{
     font-size: 25px;
     font-weight: bold;
@@ -106,7 +94,7 @@ h3{
 
 .absolute{
     position: absolute;
-    right: -100px;
+    right: 15px;
 }
 #block_block{
     margin-top:20px;
@@ -122,14 +110,8 @@ label{
     border:solid 1px black;
 }
 
-<<<<<<< HEAD
-th, table td {
-    border: solid 2px black;
-    padding: 10px;
-=======
 th, td{
     border: solid 1px black;
->>>>>>> 23aedbebf056f5854ac136fb9dc8f10cb71bab3f
 }
 
 .modoru{
