@@ -60,15 +60,22 @@ h3{
     font-size: 250%;
     font-weight: bold;
     text-align: center;
+<<<<<<< HEAD
+    font-family: 'Courier New', Courier, monospace;
+=======
     font-family: 'Caveat', cursive;
     float: left;
+>>>>>>> 171331b17e17f521ec7e4b9f711608bdb77345c1
 }
 
-.th th {
+.th td{
     font-size: 150%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 171331b17e17f521ec7e4b9f711608bdb77345c1
 .itiran{
     font-size: 25px;
     font-weight: bold;
@@ -112,10 +119,14 @@ label{
     border:solid 1px black;
 }
 
-th, table td {
-    border: solid 2px black;
-    padding: 10px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 171331b17e17f521ec7e4b9f711608bdb77345c1
+th, td{
+    border: solid 1px black;
 }
+
 
 .modoru{
     font-size: 15px;

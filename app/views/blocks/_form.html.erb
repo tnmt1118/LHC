@@ -1,6 +1,6 @@
 <%= form_with(model: block) do |form| %>
   <% if block.errors.any? %>
-    <ul>
+    <ul class="era">
         <% block.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
