@@ -45,7 +45,7 @@ a:hover.ss{
 h3{
     font-size: 50px;
     color: rgb(165, 39, 39);
-    text-decoration: ;
+    text-decoration: none;
     text-align: center;
 }
 
@@ -63,23 +63,14 @@ h3{
     float: left;
 }
 
-<<<<<<< HEAD
 
-
-.blocktitle h1 a {
-		display: block;
-		width: 64px;
-		height: 69px;
-		font-size: 0;
-		background: url(images/home.png) right top/64px auto no-repeat;
-	}
-
-
-
-
-
-
-
+.blocktitle h1 {
+	display: block;
+	width: 64px;
+	height: 69px;
+	font-size: 0;
+	background: url(images/home.png) right top/64px auto no-repeat;
+}
 
 .th th {
     font-size: 150%;
@@ -88,15 +79,10 @@ h3{
 
 .blockitiran{
     font-size: 27px;
-=======
+}
 
 .itiran{
-<<<<<<< HEAD
-    font-size: 30px;
->>>>>>> 0e5187c16c5e459f66f75d62e75eab825e1471fd
-=======
     font-size: 25px;
->>>>>>> d7c8cd761038c20d691902835a4944e392e1b638
     font-weight: bold;
     font-family: 'Caveat', cursive;
 }
@@ -107,25 +93,17 @@ h3{
     font-family: 'Caveat', cursive;
 }
 
-<<<<<<< HEAD
-.blockitiran2{
-    font-size: 15px;
-=======
+
 .itiran2{
-<<<<<<< HEAD
-    font-size: 18px;
->>>>>>> 0e5187c16c5e459f66f75d62e75eab825e1471fd
-=======
     font-size: 15px;
->>>>>>> d7c8cd761038c20d691902835a4944e392e1b638
     font-weight: bold;
     font-family: 'Caveat', cursive;
     color:black;
 }
 
-.homeicon img{
-
-}
+/*.homeicon img{
+    
+}*/
 
 .relative{
     position: relative;
