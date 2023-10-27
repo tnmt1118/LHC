@@ -28,15 +28,16 @@
   </thead>
 
   <tbody>
+    <table class="sen">
     <% @blocks.each do |block| %>
       <tr>
         <td class="itiran1"><li><%= block.block %></li></td>
-        <td><%= block.user_id %></td>
-        <td class="itiran1"><%= link_to '詳細', block %></td>
-        <td class="itiran1"><%= link_to '編集', edit_block_path(block) %></td>
-        <td class="itiran1"><%= link_to '削除', block, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
+        <td class="itiran2"><%= link_to '詳細', block %></td>
+        <td class="itiran2"><%= link_to '編集', edit_block_path(block) %></td>
+        <td class="itiran2"><%= link_to '削除', block, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
       </tr>
     <% end %>
+    </table>
   </tbody>
 </table>
 
