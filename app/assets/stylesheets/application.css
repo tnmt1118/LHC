@@ -60,7 +60,8 @@ h3{
     font-size: 250%;
     font-weight: bold;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Caveat', cursive;
+    float: left;
 }
 
 .th td{
@@ -110,9 +111,11 @@ label{
     border:solid 1px black;
 }
 
+
 th, td{
     border: solid 1px black;
 }
+
 
 .modoru{
     font-size: 15px;
