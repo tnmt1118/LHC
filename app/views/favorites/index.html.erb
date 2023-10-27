@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <div class="blocktitle">
-  <h1>お気に入り <a href="http://localhost:3000/"></a></h1>
+  <h1>お気に入り <a href="http://localhost:3000/"><img class="absolute" width="50" src="images/home.png" alt="home"></a></h1>
 </div>
 
 <%#18行目までホームボタン%>
@@ -12,20 +12,10 @@
     display: block;
 }
 </style>
-<div class="relative">
-  <a class="homeicon" href="http://localhost:3000/" class="example">
-    <img class="absolute" width="50" src="images/home.png" alt="home">
-  </a>
-</div>
+
+<h3 class="itiran">お気に入り一覧<h3>
 
 <table>
-  <thead>
-    <tr>
-      <th class="blockitiran">お気に入り一覧</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @favorites.each do |favorite| %>
       <tr>

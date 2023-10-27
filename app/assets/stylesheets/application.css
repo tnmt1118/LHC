@@ -18,7 +18,7 @@
 /*ホーム画面*/
 .title {
     color: rgb(165, 39, 39);
-    font-size: 50px;
+    font-size: 80px;
     font-weight: bold;
     text-align: center;
     font-family: 'Caveat', cursive;
@@ -30,7 +30,6 @@
 
 .card:hover{
     color: rgb(165, 39, 39);
-    
 }
 
 .ss{
@@ -47,18 +46,26 @@ h3{
     color: rgb(165, 39, 39);
     text-decoration: none;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .card-text{
     font-size: 20px;
     text-align: center;
 }
-/*ブロック画面*/
+
+/*各画面*/
 .blocktitle h1{
     color: rgb(180, 81, 68);
     font-size: 250%;
     font-weight: bold;
     text-align: center;
+<<<<<<< HEAD
+    font-family: 'Caveat', cursive;
+    float: left;
+=======
+    font-family: 'Courier New', Courier, monospace;
+>>>>>>> 23aedbebf056f5854ac136fb9dc8f10cb71bab3f
 }
 
 .th th {
@@ -66,30 +73,32 @@ h3{
 }
 
 
+<<<<<<< HEAD
+.blockitiran{
+    font-size: 30%;
+}
+
+=======
+>>>>>>> 23aedbebf056f5854ac136fb9dc8f10cb71bab3f
 .itiran{
     font-size: 25px;
     font-weight: bold;
-    font-family: 'Caveat', cursive;
-    margin-bottom:20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .itiran1{
     font-size: 120%;
     font-weight: bold;
-    font-family: 'Caveat', cursive;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
 .itiran2{
     font-size: 15px;
     font-weight: bold;
-    font-family: 'Caveat', cursive;
+    font-family: 'Courier New', Courier, monospace;
     color:black;
 }
-
-/*.homeicon img{
-    
-}*/
 
 .relative{
     position: relative;
@@ -97,7 +106,7 @@ h3{
 
 .absolute{
     position: absolute;
-    right: 0px;
+    right: -100px;
 }
 #block_block{
     margin-top:20px;
@@ -113,11 +122,20 @@ label{
     border:solid 1px black;
 }
 
+<<<<<<< HEAD
+th, table td {
+    border: solid 2px black;
+    padding: 10px;
+=======
 th, td{
     border: solid 1px black;
+>>>>>>> 23aedbebf056f5854ac136fb9dc8f10cb71bab3f
 }
 
 .modoru{
-    font-size:15px;
+    font-size: 15px;
 }
 
+a img{
+    margin: 0 36px 8px 0 ;
+}
