@@ -1,7 +1,10 @@
 <div class="blocktitle">
-<h1>編集</h1>
+  <h1>編集</h1>
+</div>
 
 <%= render 'form', block: @block %>
 
-<%= link_to '詳細', @block %> |
-<%= link_to '戻る', blocks_path %>
+<div class="modoru">
+  <%= link_to '詳細', @block %> |
+  <%= link_to '戻る', blocks_path %>
+</div>
