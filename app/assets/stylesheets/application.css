@@ -59,17 +59,6 @@ h3{
     font-size: 250%;
     font-weight: bold;
     text-align: center;
-    font-family: 'Caveat', cursive;
-    float: left;
-}
-
-
-.blocktitle h1 {
-	display: block;
-	width: 64px;
-	height: 69px;
-	font-size: 0;
-	background: url(images/home.png) right top/64px auto no-repeat;
 }
 
 .th th {
@@ -77,14 +66,11 @@ h3{
 }
 
 
-.blockitiran{
-    font-size: 27px;
-}
-
 .itiran{
     font-size: 25px;
     font-weight: bold;
     font-family: 'Caveat', cursive;
+    margin-bottom:20px;
 }
 
 .itiran1{
@@ -127,7 +113,11 @@ label{
     border:solid 1px black;
 }
 
-th, table td {
+th, td{
     border: solid 1px black;
+}
+
+.modoru{
+    font-size:15px;
 }
 
