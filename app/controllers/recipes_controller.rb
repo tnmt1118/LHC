@@ -7,7 +7,6 @@ class RecipesController < ApplicationController
     @rec_recipeTitle = @rec["result"][0]["recipeTitle"]
     @rec_recipeIndication = @rec["result"][0]["recipeIndication"]
     @rec_recipeCost = @rec["result"][0]["recipeCost"]
-    #puts rec ["result"]["small"][0]["recipeTitle"]
   end
 
   def details

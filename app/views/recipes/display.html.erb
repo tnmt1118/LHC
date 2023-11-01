@@ -1,8 +1,40 @@
-<h1>Recipes#display</h1>
-<p>Find me in app/views/recipes/display.html.erb</p>
-<%= @rec_foodImageUrl %>
-<%= @rec_recipeTitle %>
-<%= @rec_recipeIndication %>
-<%= @rec_recipeCost %>
+<div class="blocktitle">
+<h1>検索結果</h1>
+
+<%#= @rec_foodImageUrl %>
+<%#= @rec_recipeTitle %>
+<%#= @rec_recipeIndication %>
+<%#= @rec_recipeCost %>
 <hr>
-<%= @rec%>
+
+<div class="row">
+    <% @rec["result"].each do |data| %>
+        <div class="col">
+            <%= image_tag data["foodImageUrl"] %>
+        </div>
+    <% end %>
+</div>
+
+<div class="row">
+    <% @rec["result"].each do |data| %>
+        <div class="col">
+            <%= link_to data["recipeTitle"]%>
+        </div>
+    <% end %>
+</div>
+
+<div class="row">
+    <% @rec["result"].each do |data| %>
+        <div class="col">
+            <%= link_to data["recipeIndication"]%>
+        </div>
+    <% end %>
+</div>
+
+<div class="row">
+    <% @rec["result"].each do |data| %>
+        <div class="col">
+            <%= link_to data["recipeCost"]%>
+        </div>
+    <% end %>
+</div>
