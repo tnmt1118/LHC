@@ -5,36 +5,23 @@
 <%#= @rec_recipeTitle %>
 <%#= @rec_recipeIndication %>
 <%#= @rec_recipeCost %>
-<hr>
+
 
 <div class="row">
     <% @rec["result"].each do |data| %>
         <div class="col">
-            <%= image_tag data["foodImageUrl"] %>
-        </div>
-    <% end %>
-</div>
-
-<div class="row">
-    <% @rec["result"].each do |data| %>
-        <div class="col">
-            <%= link_to data["recipeTitle"]%>
-        </div>
-    <% end %>
-</div>
-
-<div class="row">
-    <% @rec["result"].each do |data| %>
-        <div class="col">
-            <%= link_to data["recipeIndication"]%>
-        </div>
-    <% end %>
-</div>
-
-<div class="row">
-    <% @rec["result"].each do |data| %>
-        <div class="col">
-            <%= link_to data["recipeCost"]%>
+            <div class="titlex">
+                <%= link_to_unless_current data["recipeTitle"]%>
+            </div>
+            <div class="image">
+                <%= image_tag data["foodImageUrl"] %>
+            </div>
+            <div class="time">
+                <%= link_to_unless_current data["recipeIndication"]%>
+            </div>
+            <div class="cost">
+                <%= link_to_unless_current data["recipeCost"]%>
+            </div>
         </div>
     <% end %>
 </div>
