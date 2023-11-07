@@ -10,10 +10,18 @@
 <div class="row">
     <% @rec["result"].each do |data| %>
         <div class="col">
-            <%= link_to_unless_current data["recipeTitle"]%>
-            <%= image_tag data["foodImageUrl"] %>
-            <%= link_to_unless_current data["recipeIndication"]%>
-            <%= link_to_unless_current data["recipeCost"]%>
+            <div class="titlex">
+                <%= link_to_unless_current data["recipeTitle"]%>
+            </div>
+            <div class="image">
+                <%= image_tag data["foodImageUrl"] %>
+            </div>
+            <div class="time">
+                <%= link_to_unless_current data["recipeIndication"]%>
+            </div>
+            <div class="cost">
+                <%= link_to_unless_current data["recipeCost"]%>
+            </div>
         </div>
     <% end %>
 </div>
