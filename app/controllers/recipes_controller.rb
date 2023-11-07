@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   def display
-    uri = URI.parse("https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=#{Settings.rakuten.applicationid}&categoryId=10")
+    uri = URI.parse("https://app.rakuten.co.jp/services/api/Recipe/CategoryRanking/20170426?applicationId=#{Settings.rakuten.applicationid}&categoryId=20")
     json = Net::HTTP.get(uri)
     @rec = JSON.parse(json)
     #@rec_foodImageUrl = @rec["result"][0]["foodImageUrl"]
