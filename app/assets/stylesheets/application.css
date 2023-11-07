@@ -125,11 +125,12 @@ a img{
 }
 
 .titlex{
-
+    font-size: x-large;
+    font-weight: bold;
 }
 
-.image{
-    
+.image img{
+    width: 60%;
 }
 
 .time{

@@ -13,9 +13,14 @@
             <div class="titlex">
                 <%= link_to_unless_current data["recipeTitle"]%>
             </div>
+
+        <a href="http://localhost:3000/recipes/details">
+
             <div class="image">
                 <%= image_tag data["foodImageUrl"] %>
             </div>
+        </a>
+
             <div class="time">
                 <%= link_to_unless_current data["recipeIndication"]%>
             </div>
