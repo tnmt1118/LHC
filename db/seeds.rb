@@ -5,3 +5,44 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'net/http'
+require 'json'
+require 'uri'
+
+uri = URI.parse('https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426?applicationId=1087783008554873298')
+
+json = Net::HTTP.get(uri)
+
+rec = JSON.parse(json)
+
+parent_id = {}
+
+rec["result"]["large"].each do |data|
+    #puts data["categoryId"]
+    #puts ""
+    #puts ""
+    #puts data["categoryId"]
+    #puts data["categoryName"]
+    Category.create(category1: 'categoryId',name:'categoryName')
+end
+
+rec["result"]["medium"].each do |data|
+    #puts data["parentCategoryId"]
+    #puts data["categoryId"]
+    #puts ""
+    #puts data["parentCategoryId"].to_s + "-" + data["categoryId"].to_s
+    #puts data["categoryName"]
+    parent_id[data["categoryId"].to_s] = data["parentCategoryId"]
+    #puts parent_id
+    Category.create(category1: 'parentcategoryId',category2: 'categoryId',name:'categoryName')
+end
+
+rec["result"]["small"].each do |data|
+    #puts parent_id[data["parentCategoryId"].to_s]
+    #puts data["parentCategoryId"]
+    #puts data["categoryId"]
+    #puts parent_id[data["parentCategoryId"].to_s].to_s + "-" + data["parentCategoryId"].to_s + "-" + data["categoryId"].to_s
+    #puts data["categoryName"]
+    Category.create(category1: ', name:'')
+end
