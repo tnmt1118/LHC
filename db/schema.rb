@@ -10,21 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_27_050002) do
+ActiveRecord::Schema.define(version: 2023_11_08_031412) do
 
   create_table "blocks", force: :cascade do |t|
     t.string "block"
     t.integer "user_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "categolies", force: :cascade do |t|
-    t.string "api_category"
-    t.string "category1"
-    t.string "category2"
-    t.string "category3"
-    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -42,6 +32,20 @@ ActiveRecord::Schema.define(version: 2023_10_27_050002) do
   create_table "favorites", force: :cascade do |t|
     t.integer "user_id"
     t.string "favorite"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "recipes", force: :cascade do |t|
+    t.integer "recipeId"
+    t.string "recipeTitle"
+    t.string "recipeUrl"
+    t.string "foodImageUrl"
+    t.string "mediumImageUrl"
+    t.string "smallImageUrl"
+    t.string "recipeMaterial"
+    t.string "recipeIndication"
+    t.string "recipeCost"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
