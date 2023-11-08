@@ -19,16 +19,6 @@ ActiveRecord::Schema.define(version: 2023_11_08_031412) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "categolies", force: :cascade do |t|
-    t.string "api_category"
-    t.string "category1"
-    t.string "category2"
-    t.string "category3"
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "categories", force: :cascade do |t|
     t.string "api_category"
     t.string "category1"
