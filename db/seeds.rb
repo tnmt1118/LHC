@@ -24,7 +24,7 @@ rec["result"]["large"].each do |data|
     #puts ""
     #puts data["categoryId"]
     #puts data["categoryName"]
-    Category.create(category1: 'categoryId',name:'categoryName')
+    Category.create(category1: 'data["categoryId"]',name:'data["categoryName"]')
 end
 
 rec["result"]["medium"].each do |data|
@@ -35,7 +35,7 @@ rec["result"]["medium"].each do |data|
     #puts data["categoryName"]
     parent_id[data["categoryId"].to_s] = data["parentCategoryId"]
     #puts parent_id
-    Category.create(category1: 'parentcategoryId',category2: 'categoryId',name:'categoryName')
+    Category.create(category1: 'data["parentcategoryId"]',category2: 'data["categoryId"]',name:'data["categoryName"]')
 end
 
 rec["result"]["small"].each do |data|
@@ -44,5 +44,5 @@ rec["result"]["small"].each do |data|
     #puts data["categoryId"]
     #puts parent_id[data["parentCategoryId"].to_s].to_s + "-" + data["parentCategoryId"].to_s + "-" + data["categoryId"].to_s
     #puts data["categoryName"]
-    Category.create(category1: ', name:'')
+    Category.create(category1: 'parent_id[data["parentCategoryId"].to_s]' , category2:'data["parentCategoryId"]', category3:'data["CategoryId"]', name:'data["categoryName"]')
 end
