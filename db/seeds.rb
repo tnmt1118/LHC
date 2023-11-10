@@ -10,7 +10,7 @@ require 'net/http'
 require 'json'
 require 'uri'
 
-uri = URI.parse('https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426?applicationId=1087783008554873298')
+uri = URI.parse("https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426?applicationId=#{Settings.rakuten.applicationid}")
 
 json = Net::HTTP.get(uri)
 
