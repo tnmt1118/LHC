@@ -17,12 +17,16 @@ def self.reset_pk_sequence(table_name)
     end
 end
 
+Recipe.delete_all
+reset_pk_sequence("recipes")
+
+CSV.foreach("db/sample.csv", headers: true) do |row|
+    Recipe.create(recipeId: row["recipeId"], recipeTitle: row["recipeTitle"], recipeUrl: row["recipeUrl"], foodImageUrl: row["foodImageUrl"], mediumImageUrl: row["mediumImageUrl"], smallImageUrl: row["smallImageUrl"], recipeMaterial: row["recipeMaterial"], recipeIndication: row["recipeIndication"], recipeCost: row["recipeCost"])
+end
+
 Category.delete_all
 reset_pk_sequence("categories")
 
-CSV.foreach("db/sample.csv", headers: true) do |row|
-    Category.create(recipeId: row["recipeId"], recipeTitle: row["recipeTitle"], revipeUrl: row"[recipeUrl"], foodimageUrl: row["foodimageUrl"], midiumImageUrl: row["midiumImageUrl"], smallImageUrl: row["smallImageUrl"], recipeMaterial: row["recipeMaterial"], recipeIndication: row["recipeIndication"], recipeCost: row["recipeCost"])
-end
 
 uri = URI.parse("https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426?applicationId=#{Settings.rakuten.applicationid}")
 
