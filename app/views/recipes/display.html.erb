@@ -1,5 +1,5 @@
 <div class="blocktitle">
-<h1>検索結果</h1>
+<h1>検索結果</h1><br>
 <%#= @rec %>
 <%#= @rec_foodImageUrl %>
 <%#= @rec_recipeTitle %>
@@ -8,25 +8,28 @@
 
 
 <div class="row">
-    <% @rec["result"].each do |data| %>
-        <div class="col">
-            <div class="titlex">
-                <%= link_to_unless_current data["recipeTitle"]%>
-            </div>
+    <% @rec.each do |data| %>
+            <div class="col-12 col-md-6">
+                <div class="titlex">
+                    <%= link_to_unless_current data["recipeTitle"]%>
+                </div>
 
-        <a href="http://localhost:3000/recipes/details">
+                <%= link_to recipes_details_path do %>
 
-            <div class="image">
-                <%= image_tag data["foodImageUrl"] %>
-            </div>
-        </a>
+                    <div class="image">
+                        <%= image_tag data["foodImageUrl"] %>
+                    </div>
 
-            <div class="time">
-                <%= link_to_unless_current data["recipeIndication"]%>
+                <% end %>
+
+                <div class="time">
+                    <%= link_to_unless_current data["recipeIndication"]%>
+                </div>
+
+                <div class="cost">
+                    <%= link_to_unless_current data["recipeCost"]%>
+                </div>
+            
             </div>
-            <div class="cost">
-                <%= link_to_unless_current data["recipeCost"]%>
-            </div>
-        </div>
     <% end %>
 </div>
