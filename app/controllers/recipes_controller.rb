@@ -16,6 +16,8 @@ require 'uri'
   end
 
   def details
+    @det = params[:id]
+    @det = Recipe.find(params[:id])
   end
   
   def search

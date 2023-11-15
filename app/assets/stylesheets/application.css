@@ -151,3 +151,8 @@ a img{
 .api{
     width: 103px;
 }
+
+.imagex img{
+    max-width:600px;
+    width:65%;
+}
