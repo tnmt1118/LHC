@@ -127,18 +127,26 @@ a img{
 .titlex{
     font-size: x-large;
     font-weight: bold;
+    text-align:center;
 }
 
 .image img{
-    width: 60%;
+    width: 70%;
 }
 
+.image{
+    text-align:center;
+}
+
+
 .time{
-    
+    margin-left:70%;
+    font-size: 20px;
 }
 
 .cost{
-    
+    margin-left:70%;
+    font-size: 20px;
 }
 .api{
     width: 103px;
