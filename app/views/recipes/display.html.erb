@@ -5,6 +5,12 @@
 <%#= @rec_recipeTitle %>
 <%#= @rec_recipeIndication %>
 <%#= @rec_recipeCost %>
+
+<%#ホームアイコン%>
+<%= link_to home_top_path do %>
+  <%= image_tag "/images/home.png",{class: "homeicon"} %>
+<% end %>
+
 <div class="row">
     <% @rec.each do |data| %>
             <div class="col-12 col-md-6">
