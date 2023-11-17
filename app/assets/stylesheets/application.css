@@ -140,16 +140,21 @@ a img{
 
 
 .time{
-    margin-left:70%;
+    margin-left:65%;
     font-size: 20px;
 }
 
 .cost{
-    margin-left:70%;
+    margin-left:65%;
     font-size: 20px;
 }
 .api{
     width: 103px;
+}
+
+.homeicon{
+    width: 60px;
+    float: right;
 }
 
 .imagex img{
