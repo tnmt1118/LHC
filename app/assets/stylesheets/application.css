@@ -176,7 +176,7 @@ th, td{
     }
   }
 
-  @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .titlex {
       font-size: 23px;
     }
