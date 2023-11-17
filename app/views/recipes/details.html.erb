@@ -1,13 +1,16 @@
-<h1>Recipes#details</h1>
+<h1>レシピ詳細</h1>
 
 <div class="titlex">
     <%= @det.recipeTitle %><br>
 </div>
 
 <div class="imagex">
-    <%= image_tag @det.foodImageUrl %>
+    <%= image_tag @det.foodImageUrl %><br>
 </div>
 
-<%= @det.recipeMaterial %>
 
+
+<div class="syousai">
+    <%= link_to "詳しいレシピはこちらから", @det.recipeUrl, target: :_blank %>
+</div>
 
