@@ -8,6 +8,8 @@
     <%= image_tag @det.foodImageUrl %>
 </div>
 
-<%= @det.recipeMaterial %>
+<div class="syousai">
+    <%= link_to "詳しいレシピはこちらから", @det.recipeUrl, target: :_blank %>
+</div>
 
 
