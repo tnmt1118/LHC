@@ -1,11 +1,12 @@
 <p id="notice"><%= notice %></p>
 <div class="blocktitle">
-  <h1>お気に入り 
-    <a href="http://localhost:3000/">
-      <img class="absolute" width="50" src="images/home.png" alt="home">
-    </a>
-  </h1>
+  <h1>お気に入り </h1>
 </div>
+
+
+<%= link_to home_top_path do %>
+  <%= image_tag "/images/home.png",{class: "homeicon"} %>
+<% end %>
 
 <%#18行目までホームボタン%>
 <style>

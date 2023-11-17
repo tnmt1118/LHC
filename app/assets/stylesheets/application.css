@@ -151,3 +151,8 @@ a img{
 .api{
     width: 103px;
 }
+
+.homeicon{
+    width: 60px;
+    float: right;
+}

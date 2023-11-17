@@ -1,11 +1,10 @@
 <div class="blocktitle">
-<h1>ブロック <a href="http://localhost:3000/"><img class="absolute" width="50" src="images/home.png" alt="home"></a></h1>
 <h1>検索結果</h1>
-<%#= @rec %>
-<%#= @rec_foodImageUrl %>
-<%#= @rec_recipeTitle %>
-<%#= @rec_recipeIndication %>
-<%#= @rec_recipeCost %>
+
+<%#ホームアイコン%>
+<%= link_to home_top_path do %>
+  <%= image_tag "/images/home.png",{class: "homeicon"} %>
+<% end %>
 
 
 <div class="row">
