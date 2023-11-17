@@ -121,9 +121,9 @@ th, td{
 }
 
 .titlex{
-    font-size: x-large;
     font-weight: bold;
     text-align:center;
+
 }
 
 .image img{
@@ -157,3 +157,41 @@ th, td{
     max-width:600px;
     width:65%;
 }
+
+.imagex{
+    text-align: center;
+}
+
+.syousai{
+    text-align: right;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1900px) {
+    .titlex {
+      font-size: 30px;
+    }
+    .syousai{
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .titlex {
+      font-size: 23px;
+    }
+  }
+
+@media screen and (max-width: 580px) {
+    .titlex {
+      font-size: 18px;
+    }
+    .syousai{
+        font-size: 15px;
+    }
+  }
+@media screen and (max-width: 350px) {
+    .titlex {
+      font-size: 15px;
+    }
+  }
