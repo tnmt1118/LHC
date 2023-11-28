@@ -1,10 +1,14 @@
 <div class="blocktitle">
-<h1>検索結果</h1><br>
-<%#= @rec %>
-<%#= @rec_foodImageUrl %>
-<%#= @rec_recipeTitle %>
-<%#= @rec_recipeIndication %>
-<%#= @rec_recipeCost %>
+    <h1>検索結果</h1>
+</div>
+
+
+<%#ホームアイコン%>
+<%= link_to home_top_path do %>
+  <%= image_tag "/images/home.png",{class: "homeicon"} %>
+<% end %>
+<br>
+
 <div class="row">
     <% @rec.each do |data| %>
             <div class="col-12 col-md-6">
