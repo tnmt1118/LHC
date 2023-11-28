@@ -18,8 +18,23 @@ require 'uri'
   def details
     @det = params[:id]
     @det = Recipe.find(params[:id])
+    agent = Mechanize.new
+    page = agent.get(@det.recipeUrl)
+    elements = page.search("#structuredRecipeList")
+    elements_text = []
+    elements.each do |ele|
+      elements_text = JSON.parse(ele.inner_text)
+    end
+
+    elements_text[1].each do |key, value|
+      if key == "recipeIngredient"
+        @elements_recipeIngredient = value
+      end
+    end
   end
   
   def search
   end
+
+
 end

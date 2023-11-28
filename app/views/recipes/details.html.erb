@@ -1,4 +1,4 @@
-<h1>Recipes#details</h1>
+<h1>レシピ詳細</h1>
 
 <div class="titlex">
     <%= @det.recipeTitle %><br>
@@ -7,6 +7,14 @@
 <div class="imagex">
     <%= image_tag @det.foodImageUrl %>
 </div>
+
+<table>
+<% @elements_recipeIngredient.each do |txt|%>
+<tr>
+    <td><%= txt %></td>
+</tr>
+<% end %>
+</table>
 
 <div class="syousai">
     <%= link_to "詳しいレシピはこちらから", @det.recipeUrl, target: :_blank %>

@@ -28,7 +28,7 @@ rec["result"]["large"].each do |data|
   recipe = JSON.parse(recipe_json)
   recipe["result"].each do |result|
     #CSVにデータを追加する
-    csv << [result["recipeId"].to_s,result["recipeTitle"].to_s,result["recipeUrl"].to_s,result["foodImageUrl"].to_s,result["mediumImageUrl"].to_s,result["smallImageUrl"].to_s,result["lrecipeMaterial"].to_s,result["recipeIndication"].to_s,result["recipeCost"].to_s]
+    csv << [result["recipeId"].to_s,result["recipeTitle"].to_s,result["recipeUrl"].to_s,result["foodImageUrl"].to_s,result["mediumImageUrl"].to_s,result["smallImageUrl"].to_s,result["recipeMaterial"].to_s,result["recipeIndication"].to_s,result["recipeCost"].to_s]
   puts result["recipeId"].to_s
   puts result["recipeTitle"].to_s
   puts result["recipeUrl"].to_s
