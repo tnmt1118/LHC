@@ -16,13 +16,19 @@
     <%= image_tag @det.foodImageUrl %><br>
 </div>
 
-<table>
-<% @elements_recipeIngredient.each do |txt|%>
-<tr>
-    <td><%= txt %></td>
-</tr>
-<% end %>
-</table>
+<div class = "ninbun">
+材料【<%= @elements_recipeYield %>人分】<br>
+</div>
+
+<center>
+    <table class = "tablex">
+    <% @elements_recipeIngredient.each do |txt|%>
+    <tr>
+        <td><%= txt %></td>
+    </tr>
+    <% end %>
+    </table>
+</center>
 
 <div class="syousai">
     <%= link_to "詳しいレシピはこちらから", @det.recipeUrl, target: :_blank %>

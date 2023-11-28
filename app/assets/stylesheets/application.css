@@ -167,12 +167,28 @@ th, td{
     font-size: 15px;
 }
 
+.ninbun{
+    font-size:25px;
+    font-weight:bold;
+    text-align:center;
+}
+
+td{
+    font-weight:bold;
+    font-size:15px;
+}
+
 @media screen and (max-width: 1900px) {
     .titlex {
       font-size: 30px;
     }
     .syousai{
         font-size: 20px;
+    }
+
+    td{
+        width:1000px;
+        margin-left:200px;
     }
   }
 
@@ -188,6 +204,11 @@ th, td{
     }
     .syousai{
         font-size: 15px;
+    }
+
+    .ninbun{
+        font-weight:bold;
+        font-size:20px;
     }
   }
 @media screen and (max-width: 350px) {

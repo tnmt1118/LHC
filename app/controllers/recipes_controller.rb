@@ -31,6 +31,13 @@ require 'uri'
         @elements_recipeIngredient = value
       end
     end
+
+    elements_text[1].each do |key, value|
+      if key == "recipeYield"
+        @elements_recipeYield = value
+      end
+    end
+
   end
   
   def search
