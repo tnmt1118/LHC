@@ -33,3 +33,17 @@
 <div class="syousai">
     <%= link_to "詳しいレシピはこちらから", @det.recipeUrl, target: :_blank %>
 </div>
+
+
+<div class = "row">
+    <% @rec.each do |data|%>
+        <div class = "col-12 col-md-6">
+
+            <div class ="cost">
+                <%= link_to_unless_current data["recipeCost"]%>
+            </div>
+        </div>
+
+        <% if data.favorites.blank? %>
+            <%= form_with(model: @favorite) do |form| %>
+                <%= form.hidden_field:recipe_id, value: data["id"]%>
