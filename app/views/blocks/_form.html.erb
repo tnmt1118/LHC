@@ -1,10 +1,12 @@
 <%= form_with(model: block) do |form| %>
-  <% if block.errors.any? %>
+  <% if block.errors.any? %><br>
+  <div id="error_explanation">
     <ul class="era">
         <% block.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
-      </ul>
+     </ul>
+   </div>
   <% end %>
 
 

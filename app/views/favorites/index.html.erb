@@ -28,7 +28,6 @@
         <tr>
           <td class="itiran1"><%= favorite.favorite %></td>
           <td class="itiran2"><%= link_to 'Show', favorite %></td>
-          <td class="itiran2"><%= link_to 'Edit', edit_favorite_path(favorite) %></td>
           <td class="itiran2"><%= link_to 'Destroy', favorite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
