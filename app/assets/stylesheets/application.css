@@ -37,7 +37,6 @@
 }
 
 a:hover.ss{
-    text-decoration: underline;
     color: rgb(165, 39, 39);
 }
 
@@ -209,6 +208,10 @@ td{
     .titlex {
       font-size: 23px;
     }
+
+    .title{
+        font-size: 50px;
+    }
   }
 
 @media screen and (max-width: 580px) {
@@ -227,5 +230,9 @@ td{
 @media screen and (max-width: 350px) {
     .titlex {
       font-size: 15px;
+    }
+
+    .title{
+        font-size: 30px;
     }
   }
