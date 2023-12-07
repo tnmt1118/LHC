@@ -2,6 +2,7 @@ Config.setup do |config|
   # Name of the constant exposing loaded settings
   config.const_name = 'Settings'
 
+  OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE if Rails.env.development?
   # Ability to remove elements of the array set in earlier loaded settings file. For example value: '--'.
   #
   # config.knockout_prefix = nil
