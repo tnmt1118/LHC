@@ -212,6 +212,10 @@ td{
     .title{
         font-size: 50px;
     }
+
+    .itiran1{
+        font-size: 17px;
+    }
   }
 
 @media screen and (max-width: 580px) {
@@ -225,6 +229,10 @@ td{
     .ninbun{
         font-weight:bold;
         font-size:20px;
+    }
+
+    .itiran1{
+        font-size: 15px;
     }
   }
 @media screen and (max-width: 350px) {
