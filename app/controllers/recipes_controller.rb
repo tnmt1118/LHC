@@ -13,6 +13,7 @@ require 'uri'
     #@rec_recipeIndication = @rec["result"][0]["recipeIndication"]
     #@rec_recipeCost = @rec["result"][0]["recipeCost"]
     #puts rec ["result"]["small"][0]["recipeTitle"]
+    @favorite = Favorite.new
   end
 
   def details
