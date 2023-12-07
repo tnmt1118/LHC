@@ -123,7 +123,11 @@ th, td{
 .titlex{
     font-weight: bold;
     text-align:center;
+    color:black;
+}
 
+.titlex:hover{
+    color: rgb(165, 39, 39);
 }
 
 .image img{
@@ -160,6 +164,10 @@ th, td{
 
 .imagex{
     text-align: center;
+}
+
+.image :hover{
+    opacity: 0.5;
 }
 
 .syousai{
