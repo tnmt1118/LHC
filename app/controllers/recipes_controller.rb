@@ -19,6 +19,7 @@ require 'uri'
     @det = params[:id]
     @det = Recipe.find(params[:id])
     agent = Mechanize.new
+    agent.verify_mode = OpenSSL::SSL::VERIFY_NONE
     page = agent.get(@det.recipeUrl)
     elements = page.search("#structuredRecipeList")
     elements_text = []
