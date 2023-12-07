@@ -1,9 +1,7 @@
 <%= form_with(model: shopping) do |form| %>
   <% if shopping.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(shopping.errors.count, "error") %> prohibited this shopping from being saved:</h2>
-
-      <ul>
+      <ul class = "era">
         <% shopping.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
