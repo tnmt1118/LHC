@@ -14,7 +14,6 @@
     <% @blocks.each do |block| %>
       <tr>
         <td><li><%= block.block %></li></td>
-        <td><%= link_to '詳細', block %></td>
         <td><%= link_to '編集', edit_block_path(block) %></td>
         <td><%= link_to '削除', block, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
       </tr>
