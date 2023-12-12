@@ -21,8 +21,7 @@
   <tbody>
     <% @favorites.each do |favorite| %>
       <tr>
-        <td><li><%= favorite.favorite %></li></td>
-        <td><%= link_to '詳細', favorite %></td>
+        <td><li><%= link_to recipes_details_path(id: data["id"]) do, favorite.recipe.recipeTitle %></li></td>
         <td><%= link_to '削除', favorite, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
       </tr>
     <% end %>
@@ -31,4 +30,3 @@
 
 <br>
 
-<%= link_to 'お気に入り追加', new_favorite_path %>
