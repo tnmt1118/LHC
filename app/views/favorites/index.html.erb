@@ -3,13 +3,12 @@
   <h1>お気に入り </h1>
 </div>
 
-
+<%#ホームアイコン%>
 <%= link_to home_top_path do %>
   <%= image_tag "/images/home.png",{class: "homeicon"} %>
 <% end %>
 <br>
 
-<%#18行目までホームボタン%>
 <style>
 .example{
     display: inline-block;
@@ -19,22 +18,18 @@
 }
 </style>
 
-<h3 class="itiran">お気に入り一覧<h3>
-
 <table>
   <tbody>
-    <table class="sen">
-      <% @favorites.each do |favorite| %>
-        <tr>
-          <td class="itiran1"><%= favorite.favorite %></td>
-          <td class="itiran2"><%= link_to 'Show', favorite %></td>
-          <td class="itiran2"><%= link_to 'Destroy', favorite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </table>
+    <% @favorites.each do |favorite| %>
+      <tr>
+        <td><li><%= favorite.favorite %></li></td>
+        <td><%= link_to '詳細', favorite %></td>
+        <td><%= link_to '削除', favorite, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New', new_favorite_path %>
+<%= link_to 'お気に入り追加', new_favorite_path %>

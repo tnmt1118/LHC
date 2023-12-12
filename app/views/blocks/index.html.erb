@@ -3,24 +3,7 @@
 <h1>ブロック</h1>
 </div>
 
-<%#><%= link_to '<%= image_tag 'home.png'%><%#>', blocks_path %>
-
-<%#19行目までホームボタン%>
-<%#><style>
-<%#>.example{
-<%#>    display: inline-block;
-<%#>}
-<%#>.example img{
-<%#>    display: block;
-<%#>}
-<%#></style>
-<%#>    
-<%#><div class="itiran">ブロック一覧</div><%>
-
-
-<%#= link_to '<%= image_tag 'home.png' %><%#', home_top_path %>
-
-
+<%#ホームアイコン%>
 <%= link_to home_top_path do %>
   <%= image_tag "/images/home.png",{class: "homeicon"} %>
 <% end %>
@@ -28,16 +11,14 @@
 
 <table>
   <tbody>
-    <table class="sen">
     <% @blocks.each do |block| %>
       <tr>
-        <td class="itiran1"><li><%= block.block %></li></td>
-        <td class="itiran2"><%= link_to '詳細', block %></td>
-        <td class="itiran2"><%= link_to '編集', edit_block_path(block) %></td>
-        <td class="itiran2"><%= link_to '削除', block, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
+        <td><li><%= block.block %></li></td>
+        <td><%= link_to '詳細', block %></td>
+        <td><%= link_to '編集', edit_block_path(block) %></td>
+        <td><%= link_to '削除', block, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
       </tr>
     <% end %>
-    </table>
   </tbody>
 </table>
 
