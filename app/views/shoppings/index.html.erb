@@ -12,10 +12,10 @@
   <tbody>
     <% @shoppings.each do |shopping| %>
       <tr>
-        <td class="itiran1"><li><%= shopping.buy %></li></td>
-        <td class="itiran1"><%= link_to '詳細', shopping %></td>
-        <td class="itiran1"><%= link_to '編集', edit_shopping_path(shopping) %></td>
-        <td class="itiran1"><%= link_to '削除', shopping, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
+        <td><li><%= shopping.buy %></li></td>
+        <td><%= link_to '詳細', shopping %></td>
+        <td><%= link_to '編集', edit_shopping_path(shopping) %></td>
+        <td><%= link_to '削除', shopping, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
       </tr>
     <% end %>
   </tbody>

@@ -67,29 +67,24 @@ h3{
     font-size: 150%;
 }
 
-.itiran{
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-}
 
-.itiran1{
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.itiran1 li{
-    list-style: none;
-}
-
-
-.itiran2{
-    color:black;
+td a{
     font-size: 15px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+td li{
+    color: rgb(180, 81, 68);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+}
+
+td{
+    padding:0px;
+    text-align: center;
 }
 
 .relative{
@@ -213,12 +208,15 @@ td{
         width:1000px;
         margin-left:200px;
     }
+
+    td li{
+        font-size:25px;
+    }
 }
 
 
 @media screen and (max-width: 993px) {
 
-    
     .card-text{
         font-size: 12px;
     }
@@ -239,7 +237,7 @@ td{
         font-size: 50px;
     }
 
-    .itiran1{
+    td li{
         font-size: 17px;
     }
 }
@@ -258,7 +256,7 @@ td{
         font-size:20px;
     }
 
-    .itiran1{
+    td li{
         font-size: 15px;
     }
 }
