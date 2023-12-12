@@ -10,17 +10,6 @@
 <br>
 
 <table>
-  <thead>
-    <tr>
-      <th class="itiran">食材</th>
-
-      <%#><th>Buy</th>
-      <th>User</th></%>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-
   <tbody>
     <% @shoppings.each do |shopping| %>
       <tr>
@@ -35,4 +24,4 @@
 
 <br>
 
-<%= link_to '食材追加', new_shopping_path %>
+<%= link_to '購入品の追加', new_shopping_path %>

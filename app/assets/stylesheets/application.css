@@ -29,6 +29,7 @@
 }
 
 .card:hover{
+    opacity: 0.8;
     color: rgb(165, 39, 39);
 }
 
@@ -37,7 +38,6 @@
 }
 
 a:hover.ss{
-    text-decoration: underline;
     color: rgb(165, 39, 39);
 }
 
@@ -50,7 +50,6 @@ h3{
 }
 
 .card-text{
-    font-size: 15px;
     text-align: center;
 }
 
@@ -75,9 +74,14 @@ h3{
 }
 
 .itiran1{
-    font-size: 100%;
+    color: rgb(180, 81, 68);
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.itiran1 li{
+    list-style: none;
 }
 
 
@@ -187,6 +191,12 @@ td{
 }
 
 @media screen and (max-width: 1900px) {
+
+    
+    .card-text{
+        font-size: 17px;
+    }
+
     .titlex {
       font-size: 30px;
     }
@@ -198,15 +208,39 @@ td{
         width:1000px;
         margin-left:200px;
     }
-  }
+}
+
+
+@media screen and (max-width: 993px) {
+
+    
+    .card-text{
+        font-size: 12px;
+    }
+}
+
 
 @media screen and (max-width: 900px) {
+
+    .card-text{
+        font-size: 11px;
+    }
+
     .titlex {
       font-size: 23px;
     }
-  }
+
+    .title{
+        font-size: 50px;
+    }
+
+    .itiran1{
+        font-size: 17px;
+    }
+}
 
 @media screen and (max-width: 580px) {
+
     .titlex {
       font-size: 18px;
     }
@@ -218,9 +252,18 @@ td{
         font-weight:bold;
         font-size:20px;
     }
-  }
+
+    .itiran1{
+        font-size: 15px;
+    }
+}
 @media screen and (max-width: 350px) {
+
     .titlex {
       font-size: 15px;
     }
-  }
+
+    .title{
+        font-size: 30px;
+    }
+}
