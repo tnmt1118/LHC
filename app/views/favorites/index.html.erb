@@ -25,7 +25,7 @@
     <table class="sen">
       <% @favorites.each do |favorite| %>
         <tr>
-          <td class="itiran1"><%= favorite.favorite %></td>
+          <td class="itiran1"><%= @favorite.recipeTitle %></td>
           <td class="itiran2"><%= link_to 'Show', favorite %></td>
           <td class="itiran2"><%= link_to 'Destroy', favorite, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
@@ -36,4 +36,3 @@
 
 <br>
 
-<%= link_to 'New', new_favorite_path %>
