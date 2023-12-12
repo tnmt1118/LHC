@@ -16,7 +16,7 @@
                 <div class="titlex">
                     <%= link_to_unless_current data["recipeTitle"]%>
                 </div>
-            <%end%>
+            <% end %>
                 <%= link_to recipes_details_path(id: data["id"]) do %>
                     <div class="image">
                         <%= image_tag data["foodImageUrl"] %>
@@ -29,5 +29,16 @@
                     <%= link_to_unless_current data["recipeCost"]%>
                 </div>
             </div>
+
+           <% if data.favorites.blank? %>
+            <%= form_with(model: @favorite) do |form| %>
+                <%= form.hidden_field:recipe_id, value: data["id"] %>
+                <div class="actions">
+                <%= form.submit %>
+                </div>
+            <% end %>
+        <% else %>
+            <div>お気に入り！</div>
+        <% end %>
     <% end %>
 </div>

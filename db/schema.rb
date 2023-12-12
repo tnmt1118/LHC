@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 2023_12_07_022349) do
     t.string "favorite"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "recipe_id"
   end
 
   create_table "recipes", force: :cascade do |t|
