@@ -55,7 +55,7 @@ h3{
 
 /*各画面*/
 .blocktitle h1{
-    color: rgb(180, 81, 68);
+    color: black;
     font-size: 250%;
     font-weight: bold;
     text-align: center;
@@ -74,7 +74,7 @@ h3{
 }
 
 .itiran1{
-    color: rgb(180, 81, 68);
+    color: black;
     font-size: 25px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
@@ -86,10 +86,10 @@ h3{
 
 
 .itiran2{
+    color:black;
     font-size: 15px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
-    color:black;
 }
 
 .relative{
@@ -188,6 +188,11 @@ th, td{
 td{
     font-weight:bold;
     font-size:15px;
+}
+
+.kirai{
+    float:right;
+    width:150px;
 }
 
 @media screen and (max-width: 1900px) {
