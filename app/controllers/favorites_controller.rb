@@ -22,16 +22,22 @@ class FavoritesController < ApplicationController
   # POST /favorites or /favorites.json
   def create
     @favorite = Favorite.new(favorite_params)
+    @favorite.user_id = current_user.id
 
-    respond_to do |format|
-      if @favorite.save
-        format.html { redirect_to favorite_url(@favorite), notice: "Favorite was successfully created." }
-        format.json { render :show, status: :created, location: @favorite }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @favorite.errors, status: :unprocessable_entity }
-      end
+    if @favorite.save
+      redirect_to recipes_display_path, notice: "Favorite was succesfully created."
+    else
+      redirect_to recipes_display_path, notice: "Favorite was succesfully failed."
     end
+      #   respond_to do |format|
+#     if @favorite.save
+#       format.html { redirect_to favorite_url(@favorite), notice: "Favorite was successfully created." }
+#       format.json { render :show, status: :created, location: @favorite }
+#     else
+#       format.html { render :new, status: :unprocessable_entity }
+#       format.json { render json: @favorite.errors, status: :unprocessable_entity }
+#     end
+#   end
   end
 
   # PATCH/PUT /favorites/1 or /favorites/1.json
@@ -65,6 +71,6 @@ class FavoritesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def favorite_params
-      params.require(:favorite).permit(:user_id, :favorite)
+      params.require(:favorite).permit(:user_id, :favorite, :recipe_id)
     end
 end
