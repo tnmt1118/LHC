@@ -194,6 +194,12 @@ td{
     width:150px;
 }
 
+.hosi {
+    width: 50px;
+    height: 25px;
+    float: left;
+    margin-top: 47px;
+}
 @media screen and (max-width: 1900px) {
 
     
