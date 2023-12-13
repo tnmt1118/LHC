@@ -194,6 +194,14 @@ td{
     width: 50px;
     height: 25px;
     float: left;
+    z-index: 100;
+    margin-top: -80px;
+    margin-left: 15%;
+}
+
+.actions{
+    margin-top: -120px;
+    margin-left: 15%;
 }
 @media screen and (max-width: 1900px) {
 
