@@ -10,7 +10,7 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         if @user.save
             log_in(@user)
-            redirect_to profile_path
+            redirect_to home_top_path
         else
             render 'new'
         end
