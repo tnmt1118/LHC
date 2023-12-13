@@ -21,8 +21,9 @@
   <tbody>
     <% @favorites.each do |favorite| %>
       <tr>
-        <td><li><%= link_to recipes_details_path(id: data["id"]) do, favorite.recipe.recipeTitle %></li></td>
-        <td><%= link_to '削除', favorite, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
+          <td><%= link_to favorite.recipe.recipeTitle, recipes_details_path(id: favorite["id"])%></td>
+          <td><%= link_to favorite.recipe.foodImageUrl, recipes_details_path(id: favorite["id"])%></td>
+          <td><%= link_to '削除', favorite, method: :delete, data: { confirm: '本当に削除しますか？' } %></td>
       </tr>
     <% end %>
   </tbody>
