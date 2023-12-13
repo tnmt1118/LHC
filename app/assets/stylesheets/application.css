@@ -139,12 +139,12 @@ th, td{
 
 
 .time{
-    margin-left:65%;
+    float: right;
     font-size: 20px;
 }
 
 .cost{
-    margin-left:65%;
+    float: right;
     font-size: 20px;
 }
 .api{
@@ -198,7 +198,14 @@ td{
     width: 50px;
     height: 25px;
     float: left;
-    margin-top: 47px;
+    z-index: 100;
+    margin-top: -80px;
+    margin-left: 15%;
+}
+
+.actions{
+    margin-top: -120px;
+    margin-left: 15%;
 }
 @media screen and (max-width: 1900px) {
 
