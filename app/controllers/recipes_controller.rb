@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  require 'net/http'
+require 'net/http'
 require 'json'
 require 'uri'
 
@@ -25,7 +25,7 @@ require 'uri'
     elements = page.search("#structuredRecipeList")
     elements_text = []
     elements.each do |ele|
-      elements_text = JSON.parse(ele.inner_text)
+    elements_text = JSON.parse(ele.inner_text)
     end
 
     elements_text[1].each do |key, value|
@@ -54,6 +54,4 @@ require 'uri'
       render :search
     end
   end
-
-
 end

@@ -16,7 +16,7 @@
                 <div class="titlex">
                     <%= link_to_unless_current data["recipeTitle"]%>
                 </div>
-            <% end %>
+             <% end %>
                 <%= link_to recipes_details_path(id: data["id"]) do %>
                     <div class="image">
                         <%= image_tag data["foodImageUrl"] %>
@@ -25,6 +25,7 @@
                 <div class="time">
                     <%= link_to_unless_current data["recipeIndication"]%>
                 </div>
+                <br>
                 <div class="cost">
                     <%= link_to_unless_current data["recipeCost"]%>
                 </div>
