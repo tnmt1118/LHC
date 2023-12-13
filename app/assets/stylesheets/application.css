@@ -156,6 +156,10 @@ th, td{
     float: right;
 }
 
+.homeicon:hover{
+    opacity: 0.7;
+}
+
 .imagex img{
     max-width:600px;
     width:65%;
