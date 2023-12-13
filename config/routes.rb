@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'recipes/display'
   get 'recipes/details'
   get 'displays/display'
-  get 'recipes/search'
+  #get 'recipes/search'
   resources :categories
   resources :favorites
   resources :shoppings
@@ -22,4 +22,8 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
+
+  get  '/recipes_search', to: 'recipes#search'
+  post '/recipes_search', to: 'recipes#search'
+
 end

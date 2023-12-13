@@ -10,3 +10,18 @@
 
 <%= link_to 'display',"http://localhost:3000/recipes/display" %>
 
+<%= form_tag(recipes_search_path) do %>
+  <p>料理名</p>
+  <%= text_field_tag "search[recipe]" %>
+  <p>食材</p>
+  <%= text_field_tag "search[recipe]" %>
+  <p>調理時間</p>
+  <%= select_tag "search[recipe]" %>
+  <p>費用</p>
+  <%= select_tag "search[recipe]" %>
+  <p>入れたくない食材</p>
+  <%= text_field_tag "search[recipe]" %><br>
+  <%= submit_tag "検索"%>
+<% end %>
+<br>
+
