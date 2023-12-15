@@ -25,9 +25,9 @@ class FavoritesController < ApplicationController
     @favorite.user_id = current_user.id
 
     if @favorite.save
-      redirect_to recipes_display_path, notice: "Favorite was succesfully created."
+      redirect_to recipes_display_path(:id), notice: "Favorite was succesfully created."
     else
-      redirect_to recipes_display_path, notice: "Favorite was succesfully failed."
+      redirect_to recipes_display_path(:id), notice: "Favorite was succesfully failed."
     end
       #   respond_to do |format|
 #     if @favorite.save
