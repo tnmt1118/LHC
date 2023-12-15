@@ -117,6 +117,7 @@ th, td{
 
 .modoru{
     font-size: 15px;
+    margin-top: 30px;
 }
 
 .titlex{
@@ -206,13 +207,26 @@ td{
     float: left;
     z-index: 100;
     margin-top: -80px;
-    margin-left: 15%;
+    margin-left: 17%;
+}
+
+.actionsx{
+    margin-top: -120px;
+    margin-left: 16%;
 }
 
 .actions{
     margin-top: -120px;
-    margin-left: 15%;
+    margin-left: 50px;
+    float: left;
 }
+
+.actionsb{
+    margin-top: 10px;
+    margin-right: 40px;
+    float: right;
+}
+
 @media screen and (max-width: 1900px) {
 
     
