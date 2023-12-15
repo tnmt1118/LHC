@@ -47,6 +47,7 @@ require 'uri'
     if params[:search].present?
       if params[:search].present? && params[:search][:recipe].present?
         @rec = Recipe.where("title like'%#{params[:search][:recipe]}%'").order(created_at: :desc)
+        
       else
         @rec = Recipe.all.order(created_at: :asc)
       end

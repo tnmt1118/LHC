@@ -8,7 +8,6 @@
 <% end %>
 <br>
 
-<%= link_to 'display',"http://localhost:3000/recipes/display" %>
 
 <%= form_tag(recipes_search_path) do %>
   <p>料理名</p>
@@ -22,6 +21,8 @@
   <p>入れたくない食材</p>
   <%= text_field_tag "search[recipe]" %><br>
   <%= submit_tag "検索"%>
+
+  <%#= select　{調理時間: '指定なし','5分以内','約10分','約15分','約30分','約1時間','1時間以上'}%>
 <% end %>
 <br>
 
