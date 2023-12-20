@@ -17,7 +17,7 @@
                 <div class="titlex">
                     <%= link_to_unless_current data["recipeTitle"]%>
                 </div>
-            <% end %>
+             <% end %>
                 <%= link_to recipes_details_path(id: data["id"]) do %>
                     <div class="image">
                         <%= image_tag data["foodImageUrl"] %>
@@ -30,7 +30,7 @@
                 <div class="cost">
                     <%= link_to_unless_current data["recipeCost"]%>
                 </div>
-            </div>
+            
 
            <% if data.favorites.blank? %>
             <%= form_with(model: @favorite) do |form| %>
@@ -42,6 +42,7 @@
         <% else %>
             <%= image_tag "/images/hoku.png",{class: "hosi"} %>
         <% end %>
+        </div>
     <% end %>
 </div>
 
