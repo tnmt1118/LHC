@@ -124,6 +124,7 @@ th, td{
     font-weight: bold;
     text-align:center;
     color:black;
+    font-size: 30px;
 }
 
 .titley{
@@ -216,9 +217,9 @@ td{
 }
 
 .actions{
-    margin-top: -120px;
-    margin-left: 50px;
-    float: left;
+    margin-top: -75px;
+    margin-right: 20px;
+    float: right;
 }
 
 .actionsb{
@@ -227,6 +228,7 @@ td{
     float: right;
 }
 
+<<<<<<< HEAD
 p{
     margin-top: 20px;
     margin-bottom: 0px;
@@ -235,6 +237,14 @@ p{
 
 
 
+=======
+.actionsf{
+    margin-top: -100px;
+    margin-left: 105px;
+    float: left;
+}
+
+>>>>>>> 89f6da7d3b712413279ab180ecfc7d7deda36d06
 @media screen and (max-width: 1900px) {
 
     
@@ -304,7 +314,40 @@ p{
     td li{
         font-size: 15px;
     }
+
+    .hosi {
+        width: 50px;
+        height: 25px;
+        float: left;
+        z-index: 100;
+        margin-top: -80px;
+        margin-left: 17%;
+    }
+    
+    .actionsx{
+        margin-top: -120px;
+        margin-left: 16%;
+    }
+    
+    .actions{
+        margin-top: -75px;
+        margin-right: 20px;
+        float: right;
+    }
+    
+    .actionsb{
+        margin-top: 10px;
+        margin-right: 40px;
+        float: right;
+    }
+    
+    .actionsf{
+        margin-top: -120px;
+        margin-left: 60px;
+        float: left;
+    }
 }
+
 @media screen and (max-width: 350px) {
 
     .titlex,.titley {

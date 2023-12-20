@@ -34,7 +34,7 @@
            <% if data.favorites.blank? %>
             <%= form_with(model: @favorite) do |form| %>
                 <%= form.hidden_field:recipe_id, value: data["id"] %>
-                <div class="actions">
+                <div class="actionsf">
                 <%= form.submit %>
                 </div>
             <% end %>
