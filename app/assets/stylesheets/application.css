@@ -212,11 +212,11 @@ td{
 }
 
 .hosi {
-    width: 50px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     float: left;
     z-index: 100;
-    margin-top: -80px;
+    margin-top: -10px;
     margin-left: 17%;
 }
 /*不明なボタン*/
@@ -238,7 +238,8 @@ td{
 }
 /*検索結果*/
 .actionsf{
-    margin-left: 105px;
+    margin-top: -10px;
+    margin-left: 18%;
     float: left;
 }
 
@@ -321,12 +322,12 @@ p{
     }
 
     .hosi {
-        width: 50px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         float: left;
         z-index: 100;
-        margin-top: -80px;
-        margin-left: 17%;
+        margin-top: -10px;
+        margin-left: 18%;
     }
     
     .actionsx{
@@ -347,8 +348,8 @@ p{
     }
     
     .actionsf{
-        margin-top: -120px;
-        margin-left: 60px;
+        margin-top: -10px;
+        margin-left: 45px;
         float: left;
     }
 }
