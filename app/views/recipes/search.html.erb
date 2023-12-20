@@ -19,7 +19,7 @@
   <p>費用</p>
   <%= select_tag "search[recipe]", options_for_select({"指定なし": 1,"100円以下": 2,"300円前後": 3, "500円前後": 4, "1,000円前後": 5, "2,000円前後": 6,"3,000円前後": 7, "5,000円前後": 8, "10,000円以上": 9}) %>
   <p>入れたくない食材</p>
-  <%= text_field_tag "search[recipe]" %><br>
+  <%= text_field_tag "search[recipe]" %><br><br>
   <%= submit_tag "検索"%>
 <% end %>
 <br>

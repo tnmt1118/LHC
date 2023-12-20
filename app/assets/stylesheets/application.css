@@ -212,22 +212,28 @@ td{
     margin-top: -80px;
     margin-left: 17%;
 }
-
+/*不明なボタン*/
 .actionsx{
     margin-top: -120px;
     margin-left: 16%;
 }
-
+/*買い物リストのボタン*/
 .actions{
     margin-top: -75px;
     margin-right: 20px;
     float: right;
 }
-
+/*ブロックのボタン*/
 .actionsb{
     margin-top: 10px;
     margin-right: 40px;
     float: right;
+}
+/*検索結果*/
+.actionsf{
+    margin-top: -80px;
+    margin-left: 105px;
+    float: left;
 }
 
 p{
@@ -235,12 +241,6 @@ p{
     margin-bottom: 0px;
 }
 
-
-.actionsf{
-    margin-top: -100px;
-    margin-left: 105px;
-    float: left;
-}
 
 @media screen and (max-width: 1900px) {
 
