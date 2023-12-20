@@ -27,11 +27,11 @@
             <% end %>
 
             <div class="time">
-                <%= link_to_unless_current data["recipeIndication"]%>
+                <%= data["recipeIndication"]%>
             </div><br>
 
             <div class="cost">
-                <%= link_to_unless_current data["recipeCost"]%>
+                <%= data["recipeCost"]%>
             </div>
         
             <% if data.favorites.blank? %>
