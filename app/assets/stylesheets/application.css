@@ -177,7 +177,7 @@ th, td{
 }
 
 .image :hover{
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .syousai{
@@ -226,6 +226,14 @@ td{
     margin-right: 40px;
     float: right;
 }
+
+p{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+
 
 @media screen and (max-width: 1900px) {
 
