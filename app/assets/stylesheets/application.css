@@ -228,23 +228,12 @@ td{
     float: right;
 }
 
-<<<<<<< HEAD
-p{
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-
-
-
-=======
 .actionsf{
     margin-top: -100px;
     margin-left: 105px;
     float: left;
 }
 
->>>>>>> 89f6da7d3b712413279ab180ecfc7d7deda36d06
 @media screen and (max-width: 1900px) {
 
     
