@@ -108,6 +108,10 @@ label{
     font-size: 25px;
 }
 
+.field{
+    margin-top: 10px;
+}
+
 .sen{
     border:solid 1px black;
 }
@@ -219,7 +223,7 @@ td{
 }
 /*買い物リストのボタン*/
 .actions{
-    margin-top: -75px;
+    margin-top: -42px;
     margin-right: 20px;
     float: right;
 }
@@ -327,7 +331,7 @@ p{
     }
     
     .actions{
-        margin-top: -75px;
+        margin-top: -45px;
         margin-right: 20px;
         float: right;
     }
