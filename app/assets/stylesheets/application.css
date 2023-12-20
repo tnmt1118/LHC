@@ -103,7 +103,12 @@ td{
 }
 
 label{
+    padding-top: 10px;
     font-size: 25px;
+}
+
+.field{
+    margin-top: 10px;
 }
 
 .sen{
@@ -217,7 +222,7 @@ td{
 }
 
 .actions{
-    margin-top: -75px;
+    margin-top: -42px;
     margin-right: 20px;
     float: right;
 }
@@ -319,7 +324,7 @@ td{
     }
     
     .actions{
-        margin-top: -75px;
+        margin-top: -45px;
         margin-right: 20px;
         float: right;
     }
