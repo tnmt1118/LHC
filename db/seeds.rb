@@ -63,4 +63,7 @@ rec["result"]["small"].each do |data|
     #puts parent_id[data["parentCategoryId"].to_s].to_s + "-" + data["parentCategoryId"].to_s + "-" + data["categoryId"].to_s
     #puts data["categoryName"]
     Category.create(api_category: parent_id[data["parentCategoryId"].to_s].to_s + "-" + data["parentCategoryId"].to_s + "-" + data["categoryId"].to_s,category1: parent_id[data["parentCategoryId"].to_s] , category2:data["parentCategoryId"], category3:data["categoryId"], name:data["categoryName"])
+
+Favorite.delete_all
+reset_pk_sequence("favorites")
 end

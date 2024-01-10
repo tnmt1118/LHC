@@ -27,6 +27,29 @@ rec["result"]["large"].each do |data|
   recipe_json = Net::HTTP.get(recipe_uri)
   recipe = JSON.parse(recipe_json)
   recipe["result"].each do |result|
+
+    #食材を取得する
+    recipeMaterial = ""
+    agent = Mechanize. new
+    agent.verify_mode = OpenSSL::SSL::VERIFY_NONE
+    page = agent.get(result["recipeUrl"].to_s)
+    elements = page.search("#structuredRecipeList")
+
+    elements_text = []
+    elements.each do |ele|
+      elements_text = JSON.parse(ele.inner_text)
+    end
+
+    elements_text[1].each do |key,value|
+      if key == "recipeIngredient"
+        recipeMaterial = value
+      end
+    end
+
+
+
+
+
     #CSVにデータを追加する
     csv << [result["recipeId"].to_s,result["recipeTitle"].to_s,result["recipeUrl"].to_s,result["foodImageUrl"].to_s,result["mediumImageUrl"].to_s,result["smallImageUrl"].to_s,result["recipeMaterial"].to_s,result["recipeIndication"].to_s,result["recipeCost"].to_s]
   puts result["recipeId"].to_s
