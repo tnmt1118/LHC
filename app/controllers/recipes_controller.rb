@@ -55,28 +55,74 @@ require 'uri'
       #食材
       if params[:search][:recipeMaterial].present?
         unless conditions.blank?
-        @rec = Recipe.where("recipeMaterial like'%#{params[:search][:recipeMaterial]}%'").order(created_at: :desc)
+          conditions += " and "
+        end
+        conditions += "recipeMaterial like'%#{params[:search][:recipeMaterial]}%'"
       end
 
       #調理時間
       if params[:search][:recipeIndication].present?
-        @rec = Recipe.where("recipeIndication like'%#{params[:search][:recipeIndication]}%'").order(created_at: :desc)
-      else
-        @rec = Recipe.all.order(created_at: :asc)
+        recipeIndication = ""
+        case params[:search][:recipeIndication].to_i
+          when 1
+            recipeIndication = "指定なし"
+          when 2
+            recipeIndication = "5分以内"
+          when 3
+            recipeIndication = "約10分"
+          when 4
+            recipeIndication = "約15分"
+          when 5
+            recipeIndication = "約30分"
+          when 6
+            recipeIndication = "約1時間"
+          when 7
+            recipeIndication = "1時間以上"
+        end
+        unless conditions.blank?
+          conditions += " and "
+        end
+        conditions += "recipeIndication = '#{recipeIndication}'"
       end
 
       #費用
       if params[:search][:recipeCost].present?
-        @rec = Recipe.where("recipeCost like'%#{params[:search][:recipeCost]}%'").order(created_at: :desc)
-      else
-        @rec = Recipe.all.order(created_at: :asc)
+        recipeCost =""
+        case params[:search][:recipeCost].to_i
+          when 1
+            recipeCost = "指定なし"
+          when 2
+            recipeCost = "100円以下"
+          when 3
+            recipeCost = "300円前後"
+          when 4
+            recipeCost = "500円前後"
+          when 5
+            recipeCost = "1,000円前後"
+          when 6
+            recipeCost = "2,000円前後"
+          when 7
+            recipeCost = "3,000円前後"
+          when 8
+            recipeCost = "5,000円前後"
+          when 9
+            recipeCost = "10,000円以上"
+        end
+        unless conditions.blank?
+          conditions += " and "
+        end
+        conditions += "recipeCost = '#{recipeCost}'"
       end
 
       #入れたくない食材
       if params[:search][:ExceptMaterial].present?
-        @rec = Recipe.where("ExceptMaterial like'%#{params[:search][:ExceptMaterial]}%'").order(created_at: :desc)
-      else
+     
+      end
+
+      if conditions.blank?
         @rec = Recipe.all.order(created_at: :asc)
+      else
+        @rec = Recipe.where(conditions).order(created_at: :desc)
       end
 
       render :display
