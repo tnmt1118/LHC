@@ -3,7 +3,7 @@ class FavoritesController < ApplicationController
 
   # GET /favorites or /favorites.json
   def index
-    @favorites = Favorite.all
+    @favorites = Favorite.where(user_id: current_user)
   end
 
   # GET /favorites/1 or /favorites/1.json
@@ -25,9 +25,9 @@ class FavoritesController < ApplicationController
     @favorite.user_id = current_user.id
 
     if @favorite.save
-      redirect_to recipes_display_path(:id), notice: "Favorite was succesfully created."
+      redirect_to recipes_search_path(search:true)
     else
-      redirect_to recipes_display_path(:id), notice: "Favorite was succesfully failed."
+      redirect_to recipes_sarch_path, notice: "Favorite was succesfully failed."
     end
       #   respond_to do |format|
 #     if @favorite.save
