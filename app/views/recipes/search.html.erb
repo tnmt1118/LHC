@@ -15,11 +15,9 @@
   <p>食材</p>
   <%= text_field_tag "search[recipeMaterial]" %>
   <p>調理時間</p>
-  <%= select_tag "search[recipeIndication]", options_for_select({"指定なし": 1, "5分以内": 2, "約10分": 3, "約15分": 4, "約30分": 5, "約1時間": 6, "1時間以上": 7}, 1), include_blank: true %>
+  <%= select_tag "search[recipeIndication]", options_for_select({"5分以内": 2, "約10分": 3, "約15分": 4, "約30分": 5, "約1時間": 6, "1時間以上": 7}, 1), include_blank: true %>
   <p>費用</p>
-  <%= select_tag "search[recipeCost]", options_for_select({"指定なし": 1,"100円以下": 2,"300円前後": 3, "500円前後": 4, "1,000円前後": 5, "2,000円前後": 6,"3,000円前後": 7, "5,000円前後": 8, "10,000円以上": 9}) %>
-  <p>入れたくない食材</p>
-  <%= text_field_tag "search[ExceptMaterial]" %><br><br>
+  <%= select_tag "search[recipeCost]", options_for_select({"100円以下": 2,"300円前後": 3, "500円前後": 4, "1,000円前後": 5, "2,000円前後": 6,"3,000円前後": 7, "5,000円前後": 8, "10,000円以上": 9}, 1), include_blank: true %><br>
   <%= submit_tag "検索"%>
 <% end %>
 <br>

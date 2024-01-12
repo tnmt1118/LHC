@@ -5,15 +5,7 @@ require 'uri'
 
   def display
     @rec = Recipe.all
-    #uri = URI.parse("https://app.rakuten.co.jp/services/api/Recipe/CategoryList/20170426?applicationId=#{Settings.rakuten.applicationid}")
-    #json = Net::HTTP.get(uri)
-    #@rec = JSON.parse(json)
-    #@rec_foodImageUrl = @rec["result"][0]["foodImageUrl"]
-    #@rec_recipeTitle = @rec["result"][0]["recipeTitle"]
-    #@rec_recipeIndication = @rec["result"][0]["recipeIndication"]
-    #@rec_recipeCost = @rec["result"][0]["recipeCost"]
-    #puts rec ["result"]["small"][0]["recipeTitle"]
-    @favorite = Favorite.new
+    @favorite = Favorite.news
   end
 
   def details
@@ -48,24 +40,25 @@ require 'uri'
        conditions = ""
 
       #料理名
-      if params[:search][:recipeTitle].present?
-        conditions += "recipeTitle like'%#{params[:search][:recipeTitle]}%'"
+      session[:search_recipeTitle] ||= params[:search][:recipeTitle]
+      if session[:search_recipeTitle].present?
+        conditions += "recipeTitle like'%#{Recipe.sanitize_sql_like(session[:search_recipeTitle])}%'"
       end
 
       #食材
-      if params[:search][:recipeMaterial].present?
+      session[:search_recipeMaterial] ||= params[:search][:recipeMaterial]
+      if session[:search_recipeMaterial].present?
         unless conditions.blank?
           conditions += " and "
         end
-        conditions += "recipeMaterial like'%#{params[:search][:recipeMaterial]}%'"
+        conditions += "recipeMaterial like'%#{Recipe.sanitize_sql_like(session[:search_recipeMaterial])}%'"
       end
 
       #調理時間
-      if params[:search][:recipeIndication].present?
+      session[:search_recipeIndication] ||= params[:search][:recipeIndication]
+      if session[:search_recipeIndication].present?
         recipeIndication = ""
-        case params[:search][:recipeIndication].to_i
-          when 1
-            recipeIndication = "指定なし"
+        case session[:search_recipeIndication].to_i
           when 2
             recipeIndication = "5分以内"
           when 3
@@ -86,11 +79,10 @@ require 'uri'
       end
 
       #費用
-      if params[:search][:recipeCost].present?
+      session[:search_recipeCost] ||= params[:search][:recipeCost]
+      if session[:search_recipeCost].present?
         recipeCost =""
-        case params[:search][:recipeCost].to_i
-          when 1
-            recipeCost = "指定なし"
+        case session[:search_recipeCost].to_i
           when 2
             recipeCost = "100円以下"
           when 3
@@ -114,20 +106,34 @@ require 'uri'
         conditions += "recipeCost = '#{recipeCost}'"
       end
 
-      #入れたくない食材
-      if params[:search][:ExceptMaterial].present?
-     
+      block = Block.where(user_id: current_user.id)
+      block.each do |block_keyword|
+        unless conditions.blank?
+          conditions += " and "
+        end
+        conditions += "recipeMaterial not like '%#{Recipe.sanitize_sql_like(block_keyword.block)}%'" 
       end
 
       if conditions.blank?
-        @rec = Recipe.all.order(created_at: :asc)
+        @rec = Recipe.all.order(created_at: :desc)
       else
         @rec = Recipe.where(conditions).order(created_at: :desc)
       end
 
       render :display
     else
+      if det = nil
+        @no = "対象レシピがありません"
+      else
+        @no = ""
+      end
+      session[:search_recipeTitle] = nil
+      session[:search_recipeMaterial] = nil
+      session[:search_recipeIndication] = nil
+      session[:search_recipeCost] = nil
+
       render :search
+      
     end
   end
 end
