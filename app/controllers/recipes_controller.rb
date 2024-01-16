@@ -17,7 +17,7 @@ require 'uri'
     elements = page.search("#structuredRecipeList")
     elements_text = []
     elements.each do |ele|
-    elements_text = JSON.parse(ele.inner_text)
+      elements_text = JSON.parse(ele.inner_text)
     end
 
     elements_text[1].each do |key, value|
@@ -122,6 +122,10 @@ require 'uri'
 
       render :display
     else
+<<<<<<< HEAD
+=======
+      
+>>>>>>> 550003fe1a50131864f05f45697aaaa9af2d74b7
       session[:search_recipeTitle] = nil
       session[:search_recipeMaterial] = nil
       session[:search_recipeIndication] = nil
@@ -132,3 +136,4 @@ require 'uri'
     end
   end
 end
+
