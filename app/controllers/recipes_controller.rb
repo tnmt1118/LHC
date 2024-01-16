@@ -122,10 +122,7 @@ require 'uri'
 
       render :display
     else
-<<<<<<< HEAD
-=======
       
->>>>>>> 550003fe1a50131864f05f45697aaaa9af2d74b7
       session[:search_recipeTitle] = nil
       session[:search_recipeMaterial] = nil
       session[:search_recipeIndication] = nil
