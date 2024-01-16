@@ -122,11 +122,6 @@ require 'uri'
 
       render :display
     else
-      if det = nil
-        @no = "対象レシピがありません"
-      else
-        @no = ""
-      end
       session[:search_recipeTitle] = nil
       session[:search_recipeMaterial] = nil
       session[:search_recipeIndication] = nil
