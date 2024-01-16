@@ -17,7 +17,7 @@ require 'uri'
     elements = page.search("#structuredRecipeList")
     elements_text = []
     elements.each do |ele|
-    elements_text = JSON.parse(ele.inner_text)
+      elements_text = JSON.parse(ele.inner_text)
     end
 
     elements_text[1].each do |key, value|
@@ -122,11 +122,7 @@ require 'uri'
 
       render :display
     else
-      if det = nil
-        @no = "対象レシピがありません"
-      else
-        @no = ""
-      end
+      
       session[:search_recipeTitle] = nil
       session[:search_recipeMaterial] = nil
       session[:search_recipeIndication] = nil
@@ -137,3 +133,4 @@ require 'uri'
     end
   end
 end
+

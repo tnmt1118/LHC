@@ -1,6 +1,5 @@
 <div class="blocktitle">
     <h1>検索結果</h1>
-    <% @no %>
 </div>
 
 
@@ -49,6 +48,9 @@
         </div>
     <% end %>
 </div>
+<%if @rec.count == 0 %>
+    <p>検索結果がありませんでした</p>
+<% end %>
 
 
 
