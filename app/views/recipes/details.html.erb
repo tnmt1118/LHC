@@ -26,17 +26,6 @@
     <% @elements_recipeIngredient.each do |txt|%>
     <tr>
         <td><%= txt %>
-        <% if data.shoppings.blank? %>
-                <%= form_with(model: @shopping) do |form| %>
-                    <%= form.hidden_field:recipe_id, value: data["id"] %>
-
-                    <div class="actionsf">
-                        <%= form.submit %>
-                    </div>
-                <% end %>
-            <% else %>
-                <%= image_tag "/images/hoku.png",{class: "hosi"} %>
-            <% end %>
         </td>
     </tr>
     <% end %>
