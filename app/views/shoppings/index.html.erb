@@ -14,6 +14,8 @@
   <tbody>
     <% @shoppings.each do |shopping| %>
       <tr>
+
+        
         <td><li><%= shopping.buy %></li></td>
         <td><%= link_to '詳細', shopping %></td>
         <td><%= link_to '編集', edit_shopping_path(shopping) %></td>

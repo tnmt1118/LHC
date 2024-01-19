@@ -140,6 +140,11 @@ th, td{
     color:black;
 }
 
+.syoutd{
+    text-align: left;
+    padding-left: 20px;
+}
+
 .titlex:hover{
     color:grey;
 }
@@ -223,6 +228,16 @@ td{
     margin-top: -10px;
     margin-left: 17%;
 }
+
+.hosi1 {
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 7%;
+    margin-left: -60px;
+}
+
 /*不明なボタン*/
 .actionsx{
     margin-top: -120px;
@@ -245,6 +260,14 @@ td{
     margin-top: -10px;
     margin-left: 18%;
     float: left;
+}
+
+.actionst{
+    width: 20px;
+    height: 40px;
+    float: right;
+    margin-top: -25px;
+    margin-right: 20px;
 }
 
 p{

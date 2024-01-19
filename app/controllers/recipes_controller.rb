@@ -9,6 +9,7 @@ require 'uri'
   end
 
   def details
+    @shopping = Shopping.new
     @det = params[:id]
     @det = Recipe.find(params[:id])
     agent = Mechanize.new

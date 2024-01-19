@@ -18,18 +18,33 @@
 </div>
 
 <div class = "ninbun">
-材料【<%= @elements_recipeYield %>人分】<br>
+    材料【<%= @elements_recipeYield %>人分】<br>
 </div>
 
-<center>
+
     <table class = "tablex">
     <% @elements_recipeIngredient.each do |txt|%>
-    <tr>
-        <td><%= txt %></td>
-    </tr>
+        <% array = txt.split(" ") %>
+        <tr>
+        <td class = syoutd><%= array[0] %> | <%= array[1] %>
+            <% if Shopping.find_by(buy: array[0]).nil?%>
+                <%= form_with(url:addfood_path) do |form| %>
+                    <%= form.hidden_field :recipe_id, value: @det.id%>
+                    <%= form.hidden_field :buy, value: array[0]%>
+                    <%= form.hidden_field :memo, value: array[1]%>
+                    
+                    <div class="actionst">
+                        <%= form.submit %>
+                    </div>
+                <% end %>
+            <% else %>
+                <%= image_tag "/images/hoku.png",{class: "hosi1"} %>
+            <% end %>
+        </td>
+        </tr>
     <% end %>
-    </table>
-</center>
+</table>
+
 
 <div class="syousai">
     <%= link_to "詳しいレシピはこちらから", @det.recipeUrl, target: :_blank %>

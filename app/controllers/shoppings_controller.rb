@@ -22,6 +22,7 @@ class ShoppingsController < ApplicationController
   # POST /shoppings or /shoppings.json
   def create
     @shopping = Shopping.new(shopping_params)
+    @shopping.user_id = current_user.id
 
     respond_to do |format|
       if @shopping.save
@@ -57,6 +58,17 @@ class ShoppingsController < ApplicationController
     end
   end
 
+  def addfood
+    shopping = Shopping.new
+    shopping.user_id = current_user.id
+    shopping.buy = params[:buy]
+    shopping.memo = params[:memo]
+    #shopping.recipe_id = params[:recipe_id]
+    if shopping.save
+      redirect_to recipes_details_path(id: params[:recipe_id])
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_shopping
@@ -65,6 +77,6 @@ class ShoppingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def shopping_params
-      params.require(:shopping).permit(:buy, :memo)
+      params.require(:shopping).permit(:buy, :memo, :user_id, :favorite, :recipe_id)
     end
 end

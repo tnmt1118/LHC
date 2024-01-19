@@ -26,4 +26,5 @@ Rails.application.routes.draw do
   get  '/recipes_search', to: 'recipes#search'
   post '/recipes_search', to: 'recipes#search'
 
+  post 'addfood', to: 'shoppings#addfood'
 end
