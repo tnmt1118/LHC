@@ -241,7 +241,7 @@ td{
     width: 20px;
     height: 20px;
     float: right;
-    margin-top: 4px;
+    margin-top: -40px;
     margin-right: 7%;
     margin-left: -60px;
 }
@@ -284,7 +284,7 @@ p{
 }
 
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 2000px) {
 
     
     .card-text{
@@ -300,7 +300,9 @@ p{
 
     td{
         width:700px;
-        margin-left:200px;
+        margin-left:300px;
+        font-weight:bold;
+        font-size:15px;
     }
 
     td li{
