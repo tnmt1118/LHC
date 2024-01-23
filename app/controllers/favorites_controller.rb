@@ -25,7 +25,7 @@ class FavoritesController < ApplicationController
     @favorite.user_id = current_user.id
 
     if @favorite.save
-      redirect_to recipes_search_path(search:true)
+      redirect_to recipes_search_path(anchor:favorite_params["recipe_id"],search:true)
     else
       redirect_to recipes_sarch_path, notice: "Favorite was succesfully failed."
     end
