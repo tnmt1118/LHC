@@ -141,6 +141,7 @@ th, td{
 }
 
 .syoutd{
+    height: 61px;
     text-align: left;
     padding-left: 20px;
 }
