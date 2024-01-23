@@ -11,7 +11,7 @@
 
 <div class="row">
     <% @rec.each do |data| %>
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" id="<%=data["id"]%>">
 
             <%= link_to recipes_details_path(id: data["id"]) do %>
                 <div class="titlex">
