@@ -22,11 +22,11 @@
 </div>
 
 
-    <table class = "tablex">
+<table class = "tablex">
     <% @elements_recipeIngredient.each do |txt|%>
         <% array = txt.split(" ") %>
         <tr>
-        <td class = syoutd><%= array[0] %><br><%= array[1] %>
+        <td class = syoutd><%= array[0] %><br><div class="zs"><%= array[1] %></div>
             <% if Shopping.find_by(buy: array[0]).nil?%>
                 <%= form_with(url:addfood_path) do |form| %>
                     <%= form.hidden_field :recipe_id, value: @det.id%>

@@ -215,6 +215,14 @@ td{
     font-size:15px;
 }
 
+.tablex{
+    margin: auto;
+}
+
+.zs{
+    color: #888888;
+}
+
 .kirai{
     float:right;
     width:150px;
@@ -291,7 +299,7 @@ p{
     }
 
     td{
-        width:1000px;
+        width:700px;
         margin-left:200px;
     }
 
