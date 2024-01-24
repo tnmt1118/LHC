@@ -27,13 +27,8 @@
         <% array = txt.split(" ") %>
         <tr>
         <td class = syoutd><%= array[0] %><br><div class="zs"><%= array[1] %></div>
-<<<<<<< HEAD
             <% if Shopping.find_by(buy: array[0],recipe_id: @det.id).nil?%>
                 <%= form_with(url:addfood_path) do |form| %>
-=======
-            <% if Shopping.find_by(buy: array[0]).nil?%>
-                <%= form_with(url: addfood_path) do |form| %>
->>>>>>> 1750642b13186b5244d70f04b3199a9987229710
                     <%= form.hidden_field :recipe_id, value: @det.id%>
                     <%= form.hidden_field :buy, value: array[0]%>
                     <%= form.hidden_field :memo, value: array[1]%>

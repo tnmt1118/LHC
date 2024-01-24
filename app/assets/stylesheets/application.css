@@ -249,22 +249,18 @@ td{
     margin-left: -60px;
 }
 
-/*不明なボタン*/
-.actionsx{
-    margin-top: -120px;
-    margin-left: 16%;
-}
+
 /*買い物リストのボタン*/
 .actions{
-    margin-top: -42px;
+    margin-top: 0px;
     margin-right: 20px;
-    float: right;
+    float: left;
 }
 /*ブロックのボタン*/
 .actionsb{
     margin-top: 10px;
     margin-right: 40px;
-    float: right;
+    float: left;
 }
 /*検索結果*/
 .actionsf{
@@ -272,7 +268,7 @@ td{
     margin-left: 18%;
     float: left;
 }
-
+/*詳細の食材を買いリスに*/
 .actionst{
     width: 20px;
     height: 40px;
@@ -371,23 +367,6 @@ p{
         z-index: 100;
         margin-top: -10px;
         margin-left: 18%;
-    }
-    
-    .actionsx{
-        margin-top: -120px;
-        margin-left: 16%;
-    }
-    
-    .actions{
-        margin-top: -45px;
-        margin-right: 20px;
-        float: right;
-    }
-    
-    .actionsb{
-        margin-top: 10px;
-        margin-right: 40px;
-        float: right;
     }
     
     .actionsf{
