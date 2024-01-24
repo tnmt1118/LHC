@@ -63,7 +63,7 @@ class ShoppingsController < ApplicationController
     shopping.user_id = current_user.id
     shopping.buy = params[:buy]
     shopping.memo = params[:memo]
-    #shopping.recipe_id = params[:recipe_id]
+    shopping.recipe_id = params[:recipe_id]
     if shopping.save
       redirect_to recipes_details_path(id: params[:recipe_id])
     end

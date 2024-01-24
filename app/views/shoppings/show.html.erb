@@ -10,6 +10,11 @@
   <%= @shopping.memo %>
 </p>
 
+<p>
+  <strong>レシピ:</strong>
+  <%= link_to @shopping.recipe.recipeTitle,recipes_details_path(id: @shopping.recipe_id)%>
+</p>
+
 
 <%= link_to '編集', edit_shopping_path(@shopping) %> |
 <%= link_to '戻る', shoppings_path %>
